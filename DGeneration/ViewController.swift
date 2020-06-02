@@ -8,6 +8,8 @@
 
 import UIKit
 import SnapKit
+import DGCore
+import DGUIKit
 
 class ViewController: UIViewController {
     
@@ -15,6 +17,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(DGCoreDummy())
+        print(DGDummyView())
+        
         if #available(iOS 11.0, *) {
             scrollView.contentInsetAdjustmentBehavior = .never
         } else {

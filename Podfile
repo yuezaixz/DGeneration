@@ -22,6 +22,14 @@ target 'DGCore' do
   
 end
 
+target 'DGUIKit' do
+  
+  project 'DGUIKit/DGUIKit.xcodeproj'
+  
+  base_pod
+  
+end
+
 # 第三方组件
 def third_pod
   pod 'SnapKit', '~> 5.0.0'

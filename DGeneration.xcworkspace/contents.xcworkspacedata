@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DGUIKit/DGUIKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DGCore/DGCore.xcodeproj">
    </FileRef>
    <FileRef
