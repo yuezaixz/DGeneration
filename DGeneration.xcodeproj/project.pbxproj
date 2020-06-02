@@ -17,6 +17,7 @@
 		A6437D83248690C100C28BA5 /* DGenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D82248690C100C28BA5 /* DGenerationTests.swift */; };
 		A6437D8E248690C100C28BA5 /* DGenerationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D8D248690C100C28BA5 /* DGenerationUITests.swift */; };
 		A6437D9C24869CC100C28BA5 /* DGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D9B24869CC100C28BA5 /* DGHomeViewController.swift */; };
+		A6BAC7B02486AAD30022B596 /* DGUIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6BAC7AE2486AA910022B596 /* DGUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0E539E4C45FAABDC21F6B10 /* Pods_DGenerationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D9BB5A6275E04679115B97 /* Pods_DGenerationTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +36,27 @@
 			remoteGlobalIDString = A6437D67248690BF00C28BA5;
 			remoteInfo = DGeneration;
 		};
+		A6BAC7AD2486AA910022B596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6BAC7A92486AA910022B596 /* DGUIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A6BAC7982486A87E0022B596;
+			remoteInfo = DGUIKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6BAC7AF2486AAAE0022B596 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A6BAC7B02486AAD30022B596 /* DGUIKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00F1F487D512C3AFE77995E9 /* Pods-DGenerationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGenerationTests.debug.xcconfig"; path = "Target Support Files/Pods-DGenerationTests/Pods-DGenerationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +79,7 @@
 		A6437D8D248690C100C28BA5 /* DGenerationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGenerationUITests.swift; sourceTree = "<group>"; };
 		A6437D8F248690C100C28BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6437D9B24869CC100C28BA5 /* DGHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHomeViewController.swift; sourceTree = "<group>"; };
+		A6BAC7A92486AA910022B596 /* DGUIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DGUIKit.xcodeproj; path = DGUIKit/DGUIKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		ADE81FE073DD93108720ADB2 /* Pods_DGeneration_DGenerationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGeneration_DGenerationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C564EEEFAFBCCF3DA856E09B /* Pods-DGenerationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGenerationTests.release.xcconfig"; path = "Target Support Files/Pods-DGenerationTests/Pods-DGenerationTests.release.xcconfig"; sourceTree = "<group>"; };
 		F73D6CE715092F9D539A51CD /* Pods_DGeneration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGeneration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +129,7 @@
 		A6437D5F248690BF00C28BA5 = {
 			isa = PBXGroup;
 			children = (
+				A6BAC7A82486AA7C0022B596 /* Dependencies */,
 				A6437D6A248690BF00C28BA5 /* DGeneration */,
 				A6437D81248690C100C28BA5 /* DGenerationTests */,
 				A6437D8C248690C100C28BA5 /* DGenerationUITests */,
@@ -158,6 +181,22 @@
 			path = DGenerationUITests;
 			sourceTree = "<group>";
 		};
+		A6BAC7A82486AA7C0022B596 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				A6BAC7A92486AA910022B596 /* DGUIKit.xcodeproj */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		A6BAC7AA2486AA910022B596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6BAC7AE2486AA910022B596 /* DGUIKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E6D78076BCB6B09A0D2B95B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +219,7 @@
 				A6437D65248690BF00C28BA5 /* Frameworks */,
 				A6437D66248690BF00C28BA5 /* Resources */,
 				EBCC2FBB6F847C48FBB66039 /* [CP] Embed Pods Frameworks */,
+				A6BAC7AF2486AAAE0022B596 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -263,6 +303,12 @@
 			mainGroup = A6437D5F248690BF00C28BA5;
 			productRefGroup = A6437D69248690BF00C28BA5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A6BAC7AA2486AA910022B596 /* Products */;
+					ProjectRef = A6BAC7A92486AA910022B596 /* DGUIKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A6437D67248690BF00C28BA5 /* DGeneration */,
@@ -271,6 +317,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A6BAC7AE2486AA910022B596 /* DGUIKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DGUIKit.framework;
+			remoteRef = A6BAC7AD2486AA910022B596 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A6437D66248690BF00C28BA5 /* Resources */ = {

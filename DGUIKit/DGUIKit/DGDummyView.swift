@@ -8,6 +8,6 @@
 
 import UIKit
 
-class DGDummyView: UIView {
+public class DGDummyView: UIView {
 
 }
