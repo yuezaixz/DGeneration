@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		684AF331A33AA51005B0B792 /* Pods_DGCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA93E9131F7248E58868479 /* Pods_DGCore.framework */; };
+		A605A40B2487A7FF007D0228 /* DGCoreConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A40A2487A7FF007D0228 /* DGCoreConstant.swift */; };
+		A605A40D2487A848007D0228 /* DGCoreAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A40C2487A848007D0228 /* DGCoreAppInfo.swift */; };
+		A605A40F2487A89A007D0228 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A40E2487A89A007D0228 /* String+Ex.swift */; };
+		A605A4332487A963007D0228 /* Bundle+Resourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A42C2487A963007D0228 /* Bundle+Resourse.swift */; };
+		A605A4342487A963007D0228 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A42D2487A963007D0228 /* Date+Ex.swift */; };
+		A605A4352487A963007D0228 /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A42E2487A963007D0228 /* UIDevice+Ex.swift */; };
+		A605A4362487A963007D0228 /* Locale+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A42F2487A963007D0228 /* Locale+Ex.swift */; };
+		A605A4372487A963007D0228 /* UIFont+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4302487A963007D0228 /* UIFont+Ex.swift */; };
+		A605A4382487A963007D0228 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4312487A963007D0228 /* UIColor+Hex.swift */; };
+		A605A4392487A963007D0228 /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4322487A963007D0228 /* UIView+Ex.swift */; };
+		A605A43B2487A9FF007D0228 /* DGJSON+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A43A2487A9FF007D0228 /* DGJSON+Ex.swift */; };
+		A605A43D2487AA39007D0228 /* DGCoreDocumentPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A43C2487AA39007D0228 /* DGCoreDocumentPath.swift */; };
 		A6437DC72486A04D00C28BA5 /* DGCore.h in Headers */ = {isa = PBXBuildFile; fileRef = A6437DC52486A04D00C28BA5 /* DGCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6437DCE2486A18200C28BA5 /* DGCoreDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437DCD2486A18200C28BA5 /* DGCoreDummy.swift */; };
 /* End PBXBuildFile section */
@@ -15,6 +27,18 @@
 /* Begin PBXFileReference section */
 		0EA93E9131F7248E58868479 /* Pods_DGCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED6D6D1B7492093F87A4F13 /* Pods-DGCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGCore.release.xcconfig"; path = "Target Support Files/Pods-DGCore/Pods-DGCore.release.xcconfig"; sourceTree = "<group>"; };
+		A605A40A2487A7FF007D0228 /* DGCoreConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGCoreConstant.swift; sourceTree = "<group>"; };
+		A605A40C2487A848007D0228 /* DGCoreAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGCoreAppInfo.swift; sourceTree = "<group>"; };
+		A605A40E2487A89A007D0228 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		A605A42C2487A963007D0228 /* Bundle+Resourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Resourse.swift"; sourceTree = "<group>"; };
+		A605A42D2487A963007D0228 /* Date+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
+		A605A42E2487A963007D0228 /* UIDevice+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
+		A605A42F2487A963007D0228 /* Locale+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Ex.swift"; sourceTree = "<group>"; };
+		A605A4302487A963007D0228 /* UIFont+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Ex.swift"; sourceTree = "<group>"; };
+		A605A4312487A963007D0228 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		A605A4322487A963007D0228 /* UIView+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
+		A605A43A2487A9FF007D0228 /* DGJSON+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DGJSON+Ex.swift"; sourceTree = "<group>"; };
+		A605A43C2487AA39007D0228 /* DGCoreDocumentPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGCoreDocumentPath.swift; sourceTree = "<group>"; };
 		A6437DC22486A04D00C28BA5 /* DGCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6437DC52486A04D00C28BA5 /* DGCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGCore.h; sourceTree = "<group>"; };
 		A6437DC62486A04D00C28BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +69,39 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		A605A4072487A7C1007D0228 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A605A40A2487A7FF007D0228 /* DGCoreConstant.swift */,
+				A605A40C2487A848007D0228 /* DGCoreAppInfo.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A605A4082487A7CA007D0228 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A605A42C2487A963007D0228 /* Bundle+Resourse.swift */,
+				A605A42D2487A963007D0228 /* Date+Ex.swift */,
+				A605A42F2487A963007D0228 /* Locale+Ex.swift */,
+				A605A4312487A963007D0228 /* UIColor+Hex.swift */,
+				A605A42E2487A963007D0228 /* UIDevice+Ex.swift */,
+				A605A4302487A963007D0228 /* UIFont+Ex.swift */,
+				A605A4322487A963007D0228 /* UIView+Ex.swift */,
+				A605A40E2487A89A007D0228 /* String+Ex.swift */,
+				A605A43A2487A9FF007D0228 /* DGJSON+Ex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A605A4092487A7DA007D0228 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A605A43C2487AA39007D0228 /* DGCoreDocumentPath.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		A6437DB82486A04D00C28BA5 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +124,9 @@
 		A6437DC42486A04D00C28BA5 /* DGCore */ = {
 			isa = PBXGroup;
 			children = (
+				A605A4092487A7DA007D0228 /* Utilities */,
+				A605A4082487A7CA007D0228 /* Extensions */,
+				A605A4072487A7C1007D0228 /* Common */,
 				A6437DC52486A04D00C28BA5 /* DGCore.h */,
 				A6437DC62486A04D00C28BA5 /* Info.plist */,
 				A6437DCD2486A18200C28BA5 /* DGCoreDummy.swift */,
@@ -188,7 +248,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A605A4342487A963007D0228 /* Date+Ex.swift in Sources */,
+				A605A4392487A963007D0228 /* UIView+Ex.swift in Sources */,
 				A6437DCE2486A18200C28BA5 /* DGCoreDummy.swift in Sources */,
+				A605A4362487A963007D0228 /* Locale+Ex.swift in Sources */,
+				A605A40F2487A89A007D0228 /* String+Ex.swift in Sources */,
+				A605A4372487A963007D0228 /* UIFont+Ex.swift in Sources */,
+				A605A40B2487A7FF007D0228 /* DGCoreConstant.swift in Sources */,
+				A605A4332487A963007D0228 /* Bundle+Resourse.swift in Sources */,
+				A605A40D2487A848007D0228 /* DGCoreAppInfo.swift in Sources */,
+				A605A4352487A963007D0228 /* UIDevice+Ex.swift in Sources */,
+				A605A4382487A963007D0228 /* UIColor+Hex.swift in Sources */,
+				A605A43D2487AA39007D0228 /* DGCoreDocumentPath.swift in Sources */,
+				A605A43B2487A9FF007D0228 /* DGJSON+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
