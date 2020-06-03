@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		08951FF9FE17AC8B2E8BC366 /* Pods_DGUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F564D253BA4C7D6822F0D0AA /* Pods_DGUIKit.framework */; };
+		A605A4412487AB8D007D0228 /* DGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4402487AB8D007D0228 /* DGBaseViewController.swift */; };
+		A605A4442487ABD7007D0228 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4432487ABD7007D0228 /* UIViewController+Ex.swift */; };
+		A605A4472487AC4A007D0228 /* GDUIKitConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4462487AC4A007D0228 /* GDUIKitConstant.swift */; };
 		A6BAC79D2486A87E0022B596 /* DGUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BAC79B2486A87E0022B596 /* DGUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6BAC7A62486A8AD0022B596 /* DGDummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BAC7A52486A8AD0022B596 /* DGDummyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D0081C1854506E5E6FBF824 /* Pods-DGUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGUIKit.debug.xcconfig"; path = "Target Support Files/Pods-DGUIKit/Pods-DGUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		A605A4402487AB8D007D0228 /* DGBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGBaseViewController.swift; sourceTree = "<group>"; };
+		A605A4432487ABD7007D0228 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
+		A605A4462487AC4A007D0228 /* GDUIKitConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDUIKitConstant.swift; sourceTree = "<group>"; };
 		A6BAC7982486A87E0022B596 /* DGUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BAC79B2486A87E0022B596 /* DGUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGUIKit.h; sourceTree = "<group>"; };
 		A6BAC79C2486A87E0022B596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +51,30 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		A605A43E2487AB6F007D0228 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A605A4402487AB8D007D0228 /* DGBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A605A4422487ABC6007D0228 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A605A4432487ABD7007D0228 /* UIViewController+Ex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A605A4452487AC38007D0228 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A605A4462487AC4A007D0228 /* GDUIKitConstant.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		A6BAC78E2486A87E0022B596 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +97,9 @@
 		A6BAC79A2486A87E0022B596 /* DGUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A605A4452487AC38007D0228 /* Common */,
+				A605A4422487ABC6007D0228 /* Extensions */,
+				A605A43E2487AB6F007D0228 /* Base */,
 				A6BAC79B2486A87E0022B596 /* DGUIKit.h */,
 				A6BAC79C2486A87E0022B596 /* Info.plist */,
 				A6BAC7A52486A8AD0022B596 /* DGDummyView.swift */,
@@ -188,7 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A605A4412487AB8D007D0228 /* DGBaseViewController.swift in Sources */,
+				A605A4442487ABD7007D0228 /* UIViewController+Ex.swift in Sources */,
 				A6BAC7A62486A8AD0022B596 /* DGDummyView.swift in Sources */,
+				A605A4472487AC4A007D0228 /* GDUIKitConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

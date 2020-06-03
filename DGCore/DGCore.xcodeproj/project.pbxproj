@@ -20,6 +20,7 @@
 		A605A4392487A963007D0228 /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4322487A963007D0228 /* UIView+Ex.swift */; };
 		A605A43B2487A9FF007D0228 /* DGJSON+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A43A2487A9FF007D0228 /* DGJSON+Ex.swift */; };
 		A605A43D2487AA39007D0228 /* DGCoreDocumentPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A43C2487AA39007D0228 /* DGCoreDocumentPath.swift */; };
+		A605A4492487AD31007D0228 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4482487AD31007D0228 /* NSObject+Rx.swift */; };
 		A6437DC72486A04D00C28BA5 /* DGCore.h in Headers */ = {isa = PBXBuildFile; fileRef = A6437DC52486A04D00C28BA5 /* DGCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6437DCE2486A18200C28BA5 /* DGCoreDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437DCD2486A18200C28BA5 /* DGCoreDummy.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		A605A4322487A963007D0228 /* UIView+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
 		A605A43A2487A9FF007D0228 /* DGJSON+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DGJSON+Ex.swift"; sourceTree = "<group>"; };
 		A605A43C2487AA39007D0228 /* DGCoreDocumentPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGCoreDocumentPath.swift; sourceTree = "<group>"; };
+		A605A4482487AD31007D0228 /* NSObject+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
 		A6437DC22486A04D00C28BA5 /* DGCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6437DC52486A04D00C28BA5 /* DGCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGCore.h; sourceTree = "<group>"; };
 		A6437DC62486A04D00C28BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				A605A4322487A963007D0228 /* UIView+Ex.swift */,
 				A605A40E2487A89A007D0228 /* String+Ex.swift */,
 				A605A43A2487A9FF007D0228 /* DGJSON+Ex.swift */,
+				A605A4482487AD31007D0228 /* NSObject+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				A605A4382487A963007D0228 /* UIColor+Hex.swift in Sources */,
 				A605A43D2487AA39007D0228 /* DGCoreDocumentPath.swift in Sources */,
 				A605A43B2487A9FF007D0228 /* DGJSON+Ex.swift in Sources */,
+				A605A4492487AD31007D0228 /* NSObject+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
