@@ -26,6 +26,13 @@
 		A6437D78248690C100C28BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6437D76248690C100C28BA5 /* LaunchScreen.storyboard */; };
 		A6437D83248690C100C28BA5 /* DGenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D82248690C100C28BA5 /* DGenerationTests.swift */; };
 		A6437D8E248690C100C28BA5 /* DGenerationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D8D248690C100C28BA5 /* DGenerationUITests.swift */; };
+		A6B43BB82489486800799250 /* DWFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B43BB72489486800799250 /* DWFloatingButton.swift */; };
+		A6B43BBA248951EB00799250 /* DGSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B43BB9248951EB00799250 /* DGSegmentView.swift */; };
+		A6B43BBC248952A600799250 /* DGSegmentContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B43BBB248952A600799250 /* DGSegmentContainerView.swift */; };
+		A6B43BC02489538C00799250 /* DGSegmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B43BBF2489538C00799250 /* DGSegmentViewModel.swift */; };
+		A6B43BC22489542B00799250 /* DGMultiResponseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B43BC12489542B00799250 /* DGMultiResponseTableView.swift */; };
+		A6B43BC42489549900799250 /* DGBaseSegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B43BC32489549900799250 /* DGBaseSegmentViewController.swift */; };
+		A6B43BC62489557500799250 /* DGSegmentContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B43BC52489557500799250 /* DGSegmentContainerView.xib */; };
 		A6BAC7B02486AAD30022B596 /* DGUIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6BAC7AE2486AA910022B596 /* DGUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0E539E4C45FAABDC21F6B10 /* Pods_DGenerationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D9BB5A6275E04679115B97 /* Pods_DGenerationTests.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +104,13 @@
 		A6437D89248690C100C28BA5 /* DGenerationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGenerationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6437D8D248690C100C28BA5 /* DGenerationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGenerationUITests.swift; sourceTree = "<group>"; };
 		A6437D8F248690C100C28BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B43BB72489486800799250 /* DWFloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWFloatingButton.swift; sourceTree = "<group>"; };
+		A6B43BB9248951EB00799250 /* DGSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSegmentView.swift; sourceTree = "<group>"; };
+		A6B43BBB248952A600799250 /* DGSegmentContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSegmentContainerView.swift; sourceTree = "<group>"; };
+		A6B43BBF2489538C00799250 /* DGSegmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSegmentViewModel.swift; sourceTree = "<group>"; };
+		A6B43BC12489542B00799250 /* DGMultiResponseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGMultiResponseTableView.swift; sourceTree = "<group>"; };
+		A6B43BC32489549900799250 /* DGBaseSegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGBaseSegmentViewController.swift; sourceTree = "<group>"; };
+		A6B43BC52489557500799250 /* DGSegmentContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGSegmentContainerView.xib; sourceTree = "<group>"; };
 		A6BAC7A92486AA910022B596 /* DGUIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DGUIKit.xcodeproj; path = DGUIKit/DGUIKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		ADE81FE073DD93108720ADB2 /* Pods_DGeneration_DGenerationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGeneration_DGenerationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C564EEEFAFBCCF3DA856E09B /* Pods-DGenerationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGenerationTests.release.xcconfig"; path = "Target Support Files/Pods-DGenerationTests/Pods-DGenerationTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +161,7 @@
 		A605A4502488884C007D0228 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A6B43BB5248947E400799250 /* View */,
 				A605A455248888B3007D0228 /* DGProjectHeader.swift */,
 				A605A46824888B62007D0228 /* DGConstant.swift */,
 				A605A46A24888C65007D0228 /* DGBaseNavigationController.swift */,
@@ -270,6 +285,28 @@
 				A6437D8F248690C100C28BA5 /* Info.plist */,
 			);
 			path = DGenerationUITests;
+			sourceTree = "<group>";
+		};
+		A6B43BB5248947E400799250 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6B43BBD2489536E00799250 /* DGSegmentView */,
+				A6B43BB72489486800799250 /* DWFloatingButton.swift */,
+				A6B43BC12489542B00799250 /* DGMultiResponseTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6B43BBD2489536E00799250 /* DGSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				A6B43BB9248951EB00799250 /* DGSegmentView.swift */,
+				A6B43BBB248952A600799250 /* DGSegmentContainerView.swift */,
+				A6B43BC52489557500799250 /* DGSegmentContainerView.xib */,
+				A6B43BBF2489538C00799250 /* DGSegmentViewModel.swift */,
+				A6B43BC32489549900799250 /* DGBaseSegmentViewController.swift */,
+			);
+			path = DGSegmentView;
 			sourceTree = "<group>";
 		};
 		A6BAC7A82486AA7C0022B596 /* Dependencies */ = {
@@ -429,6 +466,7 @@
 				A6437D73248690BF00C28BA5 /* Main.storyboard in Resources */,
 				A612117D2487FA510085F03C /* Home.storyboard in Resources */,
 				A61211832488049C0085F03C /* DGHomeHeaderView.xib in Resources */,
+				A6B43BC62489557500799250 /* DGSegmentContainerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +597,8 @@
 				A605A47B24888EC2007D0228 /* NSObject+Rx.swift in Sources */,
 				A605A47624888EC2007D0228 /* Observable+Rx.swift in Sources */,
 				A612117F2487FBF30085F03C /* DGHomeViewController.swift in Sources */,
+				A6B43BC22489542B00799250 /* DGMultiResponseTableView.swift in Sources */,
+				A6B43BC02489538C00799250 /* DGSegmentViewModel.swift in Sources */,
 				A6121181248804900085F03C /* DGHomeHeaderView.swift in Sources */,
 				A6437D70248690BF00C28BA5 /* ViewController.swift in Sources */,
 				A605A456248888B3007D0228 /* DGProjectHeader.swift in Sources */,
@@ -566,6 +606,10 @@
 				A605A47924888EC2007D0228 /* Observable+Operators.swift in Sources */,
 				A605A46924888B62007D0228 /* DGConstant.swift in Sources */,
 				A6437D6C248690BF00C28BA5 /* AppDelegate.swift in Sources */,
+				A6B43BC42489549900799250 /* DGBaseSegmentViewController.swift in Sources */,
+				A6B43BB82489486800799250 /* DWFloatingButton.swift in Sources */,
+				A6B43BBC248952A600799250 /* DGSegmentContainerView.swift in Sources */,
+				A6B43BBA248951EB00799250 /* DGSegmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

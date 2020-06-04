@@ -72,27 +72,27 @@ open class DGBaseViewController: UIViewController, UIGestureRecognizerDelegate {
 //        logResourcesCount()
     }
 
-    func makeUI() {
+    open func makeUI() {
         
     }
 
-    func bindViewModel() {
+    open func bindViewModel() {
 
     }
 
-    func updateUIBeforeAppear() {
+    open func updateUIBeforeAppear() {
 
     }
 
-    func updateUIAfterAppear() {
+    open func updateUIAfterAppear() {
 
     }
 
-    func didBecomeActive() {
+    open func didBecomeActive() {
         
     }
     
-    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+    open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if gestureRecognizer is UIScreenEdgePanGestureRecognizer, self is DGDisablePanGesture {
             return false
         }

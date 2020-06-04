@@ -8,6 +8,9 @@
 
 import Foundation
 
+/***********颜色相关****************/
+let kAppThemeColor = UIColor.init(hex: 0x0068FF)
+
 /***********多语言****************/
 public func localizedString(_ key: String) -> String {
     return Bundle.localizedString(key: key, bundleName: "VVHelper")
