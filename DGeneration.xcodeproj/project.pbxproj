@@ -12,6 +12,9 @@
 		A605A456248888B3007D0228 /* DGProjectHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A455248888B3007D0228 /* DGProjectHeader.swift */; };
 		A605A46924888B62007D0228 /* DGConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A46824888B62007D0228 /* DGConstant.swift */; };
 		A605A46B24888C65007D0228 /* DGBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A46A24888C65007D0228 /* DGBaseNavigationController.swift */; };
+		A605A47624888EC2007D0228 /* Observable+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A46E24888EC2007D0228 /* Observable+Rx.swift */; };
+		A605A47924888EC2007D0228 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A47124888EC2007D0228 /* Observable+Operators.swift */; };
+		A605A47B24888EC2007D0228 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A47324888EC2007D0228 /* NSObject+Rx.swift */; };
 		A612117D2487FA510085F03C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A612117C2487FA510085F03C /* Home.storyboard */; };
 		A612117F2487FBF30085F03C /* DGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A612117E2487FBF30085F03C /* DGHomeViewController.swift */; };
 		A6121181248804900085F03C /* DGHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6121180248804900085F03C /* DGHomeHeaderView.swift */; };
@@ -74,6 +77,9 @@
 		A605A455248888B3007D0228 /* DGProjectHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGProjectHeader.swift; sourceTree = "<group>"; };
 		A605A46824888B62007D0228 /* DGConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGConstant.swift; sourceTree = "<group>"; };
 		A605A46A24888C65007D0228 /* DGBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGBaseNavigationController.swift; sourceTree = "<group>"; };
+		A605A46E24888EC2007D0228 /* Observable+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Rx.swift"; sourceTree = "<group>"; };
+		A605A47124888EC2007D0228 /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
+		A605A47324888EC2007D0228 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
 		A612117C2487FA510085F03C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A612117E2487FBF30085F03C /* DGHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHomeViewController.swift; sourceTree = "<group>"; };
 		A6121180248804900085F03C /* DGHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHomeHeaderView.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 		A605A45224888858007D0228 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A605A46D24888EC2007D0228 /* RxSwift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -160,6 +167,16 @@
 			children = (
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A605A46D24888EC2007D0228 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A605A46E24888EC2007D0228 /* Observable+Rx.swift */,
+				A605A47124888EC2007D0228 /* Observable+Operators.swift */,
+				A605A47324888EC2007D0228 /* NSObject+Rx.swift */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		A61211762487F89C0085F03C /* Business */ = {
@@ -539,11 +556,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A605A47B24888EC2007D0228 /* NSObject+Rx.swift in Sources */,
+				A605A47624888EC2007D0228 /* Observable+Rx.swift in Sources */,
 				A612117F2487FBF30085F03C /* DGHomeViewController.swift in Sources */,
 				A6121181248804900085F03C /* DGHomeHeaderView.swift in Sources */,
 				A6437D70248690BF00C28BA5 /* ViewController.swift in Sources */,
 				A605A456248888B3007D0228 /* DGProjectHeader.swift in Sources */,
 				A605A46B24888C65007D0228 /* DGBaseNavigationController.swift in Sources */,
+				A605A47924888EC2007D0228 /* Observable+Operators.swift in Sources */,
 				A605A46924888B62007D0228 /* DGConstant.swift in Sources */,
 				A6437D6C248690BF00C28BA5 /* AppDelegate.swift in Sources */,
 			);
