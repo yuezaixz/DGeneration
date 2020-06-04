@@ -1,14 +1,17 @@
 //
 //  UIFont+Ex.swift
-//  DGCore
+//  DGUIKit
 //
-//  Created by 吴迪玮 on 2020/6/3.
+//  Created by 吴迪玮 on 2020/6/4.
 //  Copyright © 2020 davidandty. All rights reserved.
 //
 
 import UIKit
 
 extension UIFont {
+    public static func pingFangLight(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size, weight: .light)
+    }
     public static func pingFangRegular(size: CGFloat) -> UIFont {
         return UIFont.systemFont(ofSize: size, weight: .regular)
     }

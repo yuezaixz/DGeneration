@@ -8,6 +8,7 @@
 
 import UIKit
 import AdSupport
+import DGCore
 
 private let DeviceList = [
     /* iPod 5 */          "iPod5,1": "iPod Touch 5",

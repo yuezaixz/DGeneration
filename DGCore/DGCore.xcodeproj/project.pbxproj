@@ -13,11 +13,7 @@
 		A605A40F2487A89A007D0228 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A40E2487A89A007D0228 /* String+Ex.swift */; };
 		A605A4332487A963007D0228 /* Bundle+Resourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A42C2487A963007D0228 /* Bundle+Resourse.swift */; };
 		A605A4342487A963007D0228 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A42D2487A963007D0228 /* Date+Ex.swift */; };
-		A605A4352487A963007D0228 /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A42E2487A963007D0228 /* UIDevice+Ex.swift */; };
 		A605A4362487A963007D0228 /* Locale+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A42F2487A963007D0228 /* Locale+Ex.swift */; };
-		A605A4372487A963007D0228 /* UIFont+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4302487A963007D0228 /* UIFont+Ex.swift */; };
-		A605A4382487A963007D0228 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4312487A963007D0228 /* UIColor+Hex.swift */; };
-		A605A4392487A963007D0228 /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4322487A963007D0228 /* UIView+Ex.swift */; };
 		A605A43B2487A9FF007D0228 /* DGJSON+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A43A2487A9FF007D0228 /* DGJSON+Ex.swift */; };
 		A605A43D2487AA39007D0228 /* DGCoreDocumentPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A43C2487AA39007D0228 /* DGCoreDocumentPath.swift */; };
 		A605A4492487AD31007D0228 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4482487AD31007D0228 /* NSObject+Rx.swift */; };
@@ -33,11 +29,7 @@
 		A605A40E2487A89A007D0228 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 		A605A42C2487A963007D0228 /* Bundle+Resourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Resourse.swift"; sourceTree = "<group>"; };
 		A605A42D2487A963007D0228 /* Date+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
-		A605A42E2487A963007D0228 /* UIDevice+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
 		A605A42F2487A963007D0228 /* Locale+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Ex.swift"; sourceTree = "<group>"; };
-		A605A4302487A963007D0228 /* UIFont+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Ex.swift"; sourceTree = "<group>"; };
-		A605A4312487A963007D0228 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
-		A605A4322487A963007D0228 /* UIView+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
 		A605A43A2487A9FF007D0228 /* DGJSON+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DGJSON+Ex.swift"; sourceTree = "<group>"; };
 		A605A43C2487AA39007D0228 /* DGCoreDocumentPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGCoreDocumentPath.swift; sourceTree = "<group>"; };
 		A605A4482487AD31007D0228 /* NSObject+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
@@ -86,10 +78,6 @@
 				A605A42C2487A963007D0228 /* Bundle+Resourse.swift */,
 				A605A42D2487A963007D0228 /* Date+Ex.swift */,
 				A605A42F2487A963007D0228 /* Locale+Ex.swift */,
-				A605A4312487A963007D0228 /* UIColor+Hex.swift */,
-				A605A42E2487A963007D0228 /* UIDevice+Ex.swift */,
-				A605A4302487A963007D0228 /* UIFont+Ex.swift */,
-				A605A4322487A963007D0228 /* UIView+Ex.swift */,
 				A605A40E2487A89A007D0228 /* String+Ex.swift */,
 				A605A43A2487A9FF007D0228 /* DGJSON+Ex.swift */,
 				A605A4482487AD31007D0228 /* NSObject+Rx.swift */,
@@ -260,16 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A605A4342487A963007D0228 /* Date+Ex.swift in Sources */,
-				A605A4392487A963007D0228 /* UIView+Ex.swift in Sources */,
 				A6437DCE2486A18200C28BA5 /* DGCoreDummy.swift in Sources */,
 				A605A4362487A963007D0228 /* Locale+Ex.swift in Sources */,
 				A605A40F2487A89A007D0228 /* String+Ex.swift in Sources */,
-				A605A4372487A963007D0228 /* UIFont+Ex.swift in Sources */,
 				A605A40B2487A7FF007D0228 /* DGCoreConstant.swift in Sources */,
 				A605A4332487A963007D0228 /* Bundle+Resourse.swift in Sources */,
 				A605A40D2487A848007D0228 /* DGCoreAppInfo.swift in Sources */,
-				A605A4352487A963007D0228 /* UIDevice+Ex.swift in Sources */,
-				A605A4382487A963007D0228 /* UIColor+Hex.swift in Sources */,
 				A605A43D2487AA39007D0228 /* DGCoreDocumentPath.swift in Sources */,
 				A605A43B2487A9FF007D0228 /* DGJSON+Ex.swift in Sources */,
 				A605A4492487AD31007D0228 /* NSObject+Rx.swift in Sources */,

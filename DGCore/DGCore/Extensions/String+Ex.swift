@@ -144,4 +144,26 @@ extension String {
         let result = hans2?.replacingOccurrences(of: " ", with: separator)
         return result ?? self
     }
+    
+    /// 去除字符串首尾的空格
+    func headTailNoSpace() -> String {
+        return self.trimmingCharacters(in: CharacterSet.whitespaces)
+    }
+    
+    /// 截取规定下标之后的字符串
+    /// - Parameter index: index
+    func subStringFrom(index: Int) -> String {
+        let temporaryString: String = self
+        let temporaryIndex = temporaryString.index(temporaryString.startIndex, offsetBy: index)
+        return String(temporaryString[temporaryIndex...])
+    }
+    
+    /// 截取规定下标之前的字符串
+    /// - Parameter index: index
+    func subStringTo(index: Int) -> String {
+        let temporaryString = self
+        let temporaryIndex = temporaryString.index(temporaryString.startIndex, offsetBy: index)
+        return String(temporaryString[...temporaryIndex])
+        
+    }
 }
