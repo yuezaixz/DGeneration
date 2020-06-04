@@ -31,7 +31,7 @@ public class DGCoreDocumentPath: NSObject {
     
     public class func cachePath() -> String? {
         var cachesPath: String?
-        if SWAppInfo.isSimulator {
+        if DGAppInfo.isSimulator {
             cachesPath = "/tmp"
         } else {
             let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)

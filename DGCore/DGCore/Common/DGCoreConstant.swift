@@ -35,12 +35,38 @@ public func executeMainBlock(_ block: @escaping () -> Void) {
 
 /// 按屏幕比例适配宽度，设计稿基于 iPhone6，375 * 667 设计
 /// - Parameter width: 设备屏幕宽度
-func scaleW(_ width: CGFloat, screenWidth: CGFloat = 375) -> CGFloat {
+public func scaleW(_ width: CGFloat, screenWidth: CGFloat = 375) -> CGFloat {
     return width * (kScreenWidth / screenWidth)
 }
 
 /// 按屏幕比例适配高度，设计稿基于 iPhone6，375 * 667 设计
 /// - Parameter height: 设备屏幕高度
-func scaleH(_ height: CGFloat, screenHeight: CGFloat = 667) -> CGFloat {
+public func scaleH(_ height: CGFloat, screenHeight: CGFloat = 667) -> CGFloat {
     return height * (kScreenHeight / screenHeight)
+}
+
+/***********日志相关****************/
+
+public func logResourcesCount() {
+    #if DEBUG
+//    DGLogger.info("RxSwift resources count: \(RxSwift.Resources.total)")
+    #endif
+}
+
+/***********多语言****************/
+public func localizedString(_ key: String) -> String {
+    return Bundle.localizedString(key: key, bundleName: "VVHelper")
+}
+
+public func loadImageNamed(_ named: String) -> UIImage? {
+    return UIImage(named: named)
+}
+
+@discardableResult
+public func loadNibNamed(_ name: String, owner: Any?, options: [UINib.OptionsKey: Any]? = nil) -> [Any]? {
+    return Bundle.main.loadNibNamed(name, owner: owner, options: options)
+}
+
+public func delay(_ seconds: Int, block: @escaping () -> Void) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(seconds), execute: block)
 }

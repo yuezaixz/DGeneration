@@ -11,6 +11,8 @@
 		A605A4412487AB8D007D0228 /* DGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4402487AB8D007D0228 /* DGBaseViewController.swift */; };
 		A605A4442487ABD7007D0228 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4432487ABD7007D0228 /* UIViewController+Ex.swift */; };
 		A605A4472487AC4A007D0228 /* GDUIKitConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A4462487AC4A007D0228 /* GDUIKitConstant.swift */; };
+		A605A44D2488856B007D0228 /* DGBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A44C2488856B007D0228 /* DGBaseViewModel.swift */; };
+		A605A44F2488867D007D0228 /* DGBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A44E2488867D007D0228 /* DGBaseNavigationController.swift */; };
 		A6BAC79D2486A87E0022B596 /* DGUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BAC79B2486A87E0022B596 /* DGUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6BAC7A62486A8AD0022B596 /* DGDummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BAC7A52486A8AD0022B596 /* DGDummyView.swift */; };
 /* End PBXBuildFile section */
@@ -20,6 +22,8 @@
 		A605A4402487AB8D007D0228 /* DGBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGBaseViewController.swift; sourceTree = "<group>"; };
 		A605A4432487ABD7007D0228 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		A605A4462487AC4A007D0228 /* GDUIKitConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDUIKitConstant.swift; sourceTree = "<group>"; };
+		A605A44C2488856B007D0228 /* DGBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGBaseViewModel.swift; sourceTree = "<group>"; };
+		A605A44E2488867D007D0228 /* DGBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGBaseNavigationController.swift; sourceTree = "<group>"; };
 		A6BAC7982486A87E0022B596 /* DGUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BAC79B2486A87E0022B596 /* DGUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGUIKit.h; sourceTree = "<group>"; };
 		A6BAC79C2486A87E0022B596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				A605A4402487AB8D007D0228 /* DGBaseViewController.swift */,
+				A605A44C2488856B007D0228 /* DGBaseViewModel.swift */,
+				A605A44E2488867D007D0228 /* DGBaseNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -221,7 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A605A44D2488856B007D0228 /* DGBaseViewModel.swift in Sources */,
 				A605A4412487AB8D007D0228 /* DGBaseViewController.swift in Sources */,
+				A605A44F2488867D007D0228 /* DGBaseNavigationController.swift in Sources */,
 				A605A4442487ABD7007D0228 /* UIViewController+Ex.swift in Sources */,
 				A6BAC7A62486A8AD0022B596 /* DGDummyView.swift in Sources */,
 				A605A4472487AC4A007D0228 /* GDUIKitConstant.swift in Sources */,

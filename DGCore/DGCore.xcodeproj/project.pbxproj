@@ -105,6 +105,13 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		A605A44B24888544007D0228 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		A6437DB82486A04D00C28BA5 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +134,7 @@
 		A6437DC42486A04D00C28BA5 /* DGCore */ = {
 			isa = PBXGroup;
 			children = (
+				A605A44B24888544007D0228 /* Base */,
 				A605A4092487A7DA007D0228 /* Utilities */,
 				A605A4082487A7CA007D0228 /* Extensions */,
 				A605A4072487A7C1007D0228 /* Common */,

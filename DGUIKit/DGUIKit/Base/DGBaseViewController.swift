@@ -68,7 +68,7 @@ open class DGBaseViewController: UIViewController, UIGestureRecognizerDelegate {
     }
 
     deinit {
-//        SWLogger.info("\(type(of: self)): Deinited")
+//        DGLogger.info("\(type(of: self)): Deinited")
 //        logResourcesCount()
     }
 

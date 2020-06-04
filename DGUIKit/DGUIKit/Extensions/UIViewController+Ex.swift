@@ -95,3 +95,21 @@ extension UIViewController {
         }
     }
 }
+
+extension UIViewController {
+    func findSuperVCWithType<T>(_ type: T.Type) -> T? {
+        var responder: UIResponder? = self
+        while responder != nil {
+            if let result = responder as? T {
+                return result
+            } else {
+                responder = responder?.next
+            }
+        }
+        return nil
+    }
+    
+    @objc func navBackAction() {
+        navigationController?.popViewController(animated: true)
+    }
+}

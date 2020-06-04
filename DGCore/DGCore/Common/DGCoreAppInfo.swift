@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class SWAppInfo {
+public class DGAppInfo {
     /// Returns app's name
     public static var appDisplayName: String {
         let bundleDisplayName = self.bundleDisplayName
