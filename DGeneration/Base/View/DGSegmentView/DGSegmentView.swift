@@ -19,17 +19,21 @@ class DGSegmentView: JXSegmentedView {
         contentEdgeInsetLeft = 20
         contentEdgeInsetRight = 20
         
+        self.backgroundColor = kAppBGColor
+        
         self.segmentedDataSource.isItemSpacingAverageEnabled = false
         
-        self.segmentedDataSource.titleNormalColor = UIColor(hex: 0x999999)
-        self.segmentedDataSource.titleSelectedColor = UIColor(hex: 0x333333)
-        self.segmentedDataSource.titleSelectedFont = UIFont.systemFont(ofSize: 18, weight: .medium)
-        self.segmentedDataSource.titleNormalFont = UIFont.systemFont(ofSize: 16, weight: .regular)
+        self.segmentedDataSource.titleNormalColor = kAppSubTitleColor
+        self.segmentedDataSource.titleSelectedColor = kAppThemeColor
+        self.segmentedDataSource.titleSelectedFont = UIFont.avenirHeavy(size: 18)
+        self.segmentedDataSource.titleNormalFont = UIFont.avenirHeavy(size: 18)
         self.segmentedDataSource.itemSpacing = 40.0
         self.dataSource = self.segmentedDataSource
         
-        let indicator = JXSegmentedIndicatorLineView()
-        indicator.height = 2
+        let indicator = JXSegmentedIndicatorDotLineView()
+        indicator.indicatorHeight = 6
+        indicator.indicatorWidth = 6
+//        indicator.
         indicator.indicatorColor = kAppThemeColor
         self.indicators = [indicator]
     }

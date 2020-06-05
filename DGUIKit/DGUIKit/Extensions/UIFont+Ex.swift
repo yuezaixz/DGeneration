@@ -24,3 +24,52 @@ extension UIFont {
         return UIFont.systemFont(ofSize: size, weight: .semibold)
     }
 }
+
+/// Avenir字体通用API
+extension UIFont {
+    
+    /// Book
+    /// - Parameter size: 字体大小
+    public static func avenirBook(size: CGFloat) -> UIFont {
+        guard let font = UIFont(name: "Avenir-Book", size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        return font
+    }
+    
+    /// Medium
+    /// - Parameter size: 字体大小
+    public static func avenirMedium(size: CGFloat) -> UIFont {
+        guard let font = UIFont(name: "Avenir-Medium", size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        return font
+    }
+    
+    /// Heavy
+    /// - Parameter size: 字体大小
+    public static func avenirHeavy(size: CGFloat) -> UIFont {
+        guard let font = UIFont(name: "Avenir-Heavy", size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        return font
+    }
+    
+    /// Black
+    /// - Parameter size: 字体大小
+    public static func avenirBlack(size: CGFloat) -> UIFont {
+        guard let font = UIFont(name: "Avenir-Black", size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        return font
+    }
+    
+    /// Light
+    /// - Parameter size: 字体大小
+    public static func avenirLight(size: CGFloat) -> UIFont {
+        guard let font = UIFont(name: "Avenir-Light", size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        return font
+    }
+}

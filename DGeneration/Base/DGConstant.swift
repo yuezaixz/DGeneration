@@ -10,6 +10,9 @@ import Foundation
 
 /***********颜色相关****************/
 let kAppThemeColor = UIColor.init(hex: 0x0068FF)
+let kAppBGColor = UIColor.init(hex: 0xFAFAFA)
+let kAppTitleColor = UIColor.init(hex: 0x333333)
+let kAppSubTitleColor = UIColor.init(hex: 0x999999)
 
 /***********多语言****************/
 public func localizedString(_ key: String) -> String {
