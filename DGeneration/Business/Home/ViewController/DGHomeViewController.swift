@@ -26,6 +26,9 @@ class DGHomeViewController: DGBaseViewController {
         } else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
+        
+        // 暂时写死，这个250就是segmentView起始的高度
+        scrollView.contentInset = UIEdgeInsets(top: 250 + UIApplication.shared.statusBarFrame.size.height, left: 0, bottom: 0, right: 0)
     }
     
     // MARK: - UI About
@@ -54,12 +57,14 @@ class DGHomeViewController: DGBaseViewController {
 
 extension DGHomeViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let dynamicHeadHeight = 109 - scrollView.contentOffset.y
-        if dynamicHeadHeight >= 44 {
-            headHeight.constant = dynamicHeadHeight
-        } else {
-            headHeight.constant = 44
-        }
+        // TODO 控制头部高度
+        
+//        let dynamicHeadHeight = 250 - scrollView.contentOffset.y
+//        if dynamicHeadHeight >= 44 {
+//            headHeight.constant = dynamicHeadHeight
+//        } else {
+//            headHeight.constant = 44
+//        }
     }
 }
 

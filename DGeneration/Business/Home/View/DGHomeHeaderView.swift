@@ -11,6 +11,7 @@ import UIKit
 class DGHomeHeaderView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var doneFloatingButton: DWFloatingButton!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,6 +32,8 @@ class DGHomeHeaderView: UIView {
         
         imageView.layer.cornerRadius = 24
         imageView.layer.masksToBounds = true
+        
+        
     }
 
 }
