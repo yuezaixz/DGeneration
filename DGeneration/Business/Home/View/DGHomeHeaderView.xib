@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DGHomeHeaderView" customModule="DGeneration" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="y75-Z6-7wH"/>
+                <outlet property="daysFloatingButton" destination="bBg-cG-dxY" id="a1P-WP-swf"/>
                 <outlet property="doneFloatingButton" destination="QL1-Iq-NLZ" id="Oaz-4o-CXw"/>
                 <outlet property="imageView" destination="IGK-dQ-j2q" id="S28-4u-DRL"/>
                 <outlet property="remainFloatingButton" destination="tOn-hA-KH0" id="QNR-yj-pZr"/>
@@ -23,14 +24,14 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1k-3J-Wjt">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 31th, 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSe-6n-UNV">
-                            <rect key="frame" x="29" y="20" width="103.5" height="19.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 4th, 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSe-6n-UNV">
+                            <rect key="frame" x="29" y="20" width="98.5" height="20"/>
                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                             <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="deviceRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey, David!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiN-Bf-2ny">
-                            <rect key="frame" x="29" y="39.5" width="118" height="31"/>
+                            <rect key="frame" x="29" y="40" width="118" height="31"/>
                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -58,6 +59,14 @@
                                 <constraint firstAttribute="height" constant="103" id="zH7-fB-4pj"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-cG-dxY" customClass="DWFloatingButton" customModule="DGeneration" customModuleProvider="target">
+                            <rect key="frame" x="306" y="107" width="86" height="103"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="103" id="EbA-VN-EEg"/>
+                                <constraint firstAttribute="width" constant="86" id="jkq-4A-Eq6"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="deviceRGB"/>
                     <constraints>
@@ -65,6 +74,8 @@
                         <constraint firstItem="tOn-hA-KH0" firstAttribute="bottom" secondItem="QL1-Iq-NLZ" secondAttribute="bottom" id="8kF-R5-r2y"/>
                         <constraint firstItem="IGK-dQ-j2q" firstAttribute="top" secondItem="d1k-3J-Wjt" secondAttribute="top" constant="20" id="9Gx-tc-aqu"/>
                         <constraint firstItem="tOn-hA-KH0" firstAttribute="centerX" secondItem="d1k-3J-Wjt" secondAttribute="centerX" id="EgH-zU-ck8"/>
+                        <constraint firstItem="bBg-cG-dxY" firstAttribute="bottom" secondItem="QL1-Iq-NLZ" secondAttribute="bottom" id="Isb-2d-Jto"/>
+                        <constraint firstAttribute="trailing" secondItem="bBg-cG-dxY" secondAttribute="trailing" constant="22" id="Peq-Cg-RLl"/>
                         <constraint firstItem="QL1-Iq-NLZ" firstAttribute="leading" secondItem="d1k-3J-Wjt" secondAttribute="leading" constant="22" id="R7y-t9-yjy"/>
                         <constraint firstItem="PiN-Bf-2ny" firstAttribute="leading" secondItem="NSe-6n-UNV" secondAttribute="leading" id="S8s-V9-A9f"/>
                         <constraint firstItem="NSe-6n-UNV" firstAttribute="top" secondItem="d1k-3J-Wjt" secondAttribute="top" constant="20" id="SkM-9U-K5r"/>

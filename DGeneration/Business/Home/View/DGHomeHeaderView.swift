@@ -13,6 +13,7 @@ class DGHomeHeaderView: UIView {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var doneFloatingButton: DWFloatingButton!
     @IBOutlet weak var remainFloatingButton: DWFloatingButton!
+    @IBOutlet weak var daysFloatingButton: DWFloatingButton!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,11 +37,22 @@ class DGHomeHeaderView: UIView {
         
         doneFloatingButton.buttonStatus = .selected
         remainFloatingButton.buttonStatus = .normal
+        daysFloatingButton.buttonStatus = .normal
+        daysFloatingButton.isUserInteractionEnabled = false
+        
+        doneFloatingButton.callback = { [weak self] _ in
+            self?.remainFloatingButton.animatedSwitchStatus()
+        }
+        remainFloatingButton.callback = { [weak self] _ in
+            self?.doneFloatingButton.animatedSwitchStatus()
+        }
         
         doneFloatingButton.text = "10"
         doneFloatingButton.subText = "Done"
         remainFloatingButton.text = "13"
         remainFloatingButton.subText = "Remain"
+        daysFloatingButton.text = "4"
+        daysFloatingButton.subText = "Days"
     }
 
 }

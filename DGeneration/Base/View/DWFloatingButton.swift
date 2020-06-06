@@ -8,23 +8,27 @@
 
 import UIKit
 
+
 class DWFloatingButton: UIView {
     
+    typealias DWFloatingButtonCallback = (DWFloatingButton.DWFloatingButtonStatus) -> ()
     enum DWFloatingButtonStatus {
         case normal, selected
     }
+    var callback: DWFloatingButtonCallback?
     
-    open var contentPercent: Float = 0.8 {
+    open var contentPercent: Float = 0.0 {
         didSet {
             setupContentView()
         }
     }
     
-    open var buttonColor: UIColor = UIColor(white: 0.9, alpha: 1) {
-        didSet {
-            contentView.backgroundColor = buttonColor
-        }
+    private var buttonColor: UIColor {
+        buttonStatus == .normal ? buttonBackgroundColor : contentColor
     }
+    
+    // 暂不开放
+    private var contentColor: UIColor { .white }
     
     open var buttonBackgroundColor: UIColor = UIColor(red: 0.0, green: 104.0 / 255.0, blue: 1.0, alpha: 1.0) {
         didSet {
@@ -89,8 +93,9 @@ class DWFloatingButton: UIView {
         }
     }
     
-    open var trackTouchLocation: Bool = false
+    open var trackTouchLocation: Bool = true
     open var touchUpAnimationTime: Double = 0.6
+    private var touchUping = false
     
     let contentView = UIView()
     let backgroundView = UIView()
@@ -99,7 +104,13 @@ class DWFloatingButton: UIView {
     
     fileprivate var tempShadowRadius: CGFloat = 0
     fileprivate var tempShadowOpacity: Float = 0
-    fileprivate var touchCenterLocation: CGPoint?
+    fileprivate var touchCenterLocation: CGPoint? {
+        didSet {
+            if touchCenterLocation != nil {
+                contentView.center = touchCenterLocation!
+            }
+        }
+    }
     
     convenience init() {
         self.init(frame: CGRect.zero)
@@ -129,7 +140,14 @@ class DWFloatingButton: UIView {
         titleLabel.font = textFont
         subTitleLabel.font = subTextFont
         backgroundView.frame = bounds
+        backgroundView.clipsToBounds = true
         backgroundView.addSubview(contentView)
+
+        let size: CGFloat = sqrt(bounds.width * bounds.width + bounds.height * bounds.height)
+        let corner: CGFloat = size
+        contentView.frame = CGRect(x: 0, y: 0, width: size * 2, height: size * 2)
+        contentView.layer.cornerRadius = corner
+        
         addSubview(backgroundView)
         addSubview(titleLabel)
         addSubview(subTitleLabel)
@@ -137,15 +155,13 @@ class DWFloatingButton: UIView {
     }
     
     fileprivate func setupContentView() {
-        let size: CGFloat = bounds.width * CGFloat(contentPercent)
-        let x: CGFloat = (bounds.width/2) - (size/2)
-        let y: CGFloat = (bounds.height/2) - (size/2)
-        let corner: CGFloat = size/2
-        
-        contentView.alpha = 0.0
-        contentView.backgroundColor = buttonColor
-        contentView.frame = CGRect(x: x, y: y, width: size, height: size)
-        contentView.layer.cornerRadius = corner
+        if let touchCenterLocation = touchCenterLocation {
+            
+            contentView.backgroundColor = buttonColor
+            contentView.center = touchCenterLocation
+            
+            contentView.transform = CGAffineTransform(scaleX: CGFloat(contentPercent), y: CGFloat(contentPercent))
+        }
     }
     
     func refreshButtonStyle() {
@@ -183,4 +199,72 @@ class DWFloatingButton: UIView {
         backgroundView.layer.frame = bounds
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        guard touches.count > 0 else {
+            return
+        }
+        
+        if trackTouchLocation {
+            touchCenterLocation = touches.first!.location(in: self)
+            contentPercent = 0.05
+        } else {
+            touchCenterLocation = nil
+        }
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
+        
+        guard touches.count > 0 else {
+            return
+        }
+        
+        if trackTouchLocation {
+            touchCenterLocation = touches.first!.location(in: self)
+        } else {
+            touchCenterLocation = nil
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        guard !touchUping else {
+            return
+        }
+        touchUping = true
+        if let callback = callback {
+            callback(self.buttonStatus == .normal ? .selected : .normal)
+        }
+        if touchCenterLocation != nil {
+            UIView.animate(withDuration: 0.7, delay: 0, options: [UIView.AnimationOptions.curveEaseOut],
+            animations: {
+                self.contentPercent = 1.0
+                self.buttonStatus = (self.buttonStatus == .normal ? .selected : .normal )
+            }, completion: { isFinished in
+                self.contentPercent = 0.0
+                self.touchUping = false
+            })
+        } else {
+            self.touchUping = false
+        }
+    }
+    
+    func animatedSwitchStatus() {
+        touchCenterLocation = backgroundView.center
+        UIView.animate(withDuration: 0.7, delay: 0, options: [UIView.AnimationOptions.curveEaseOut],
+        animations: {
+            self.contentPercent = 1.0
+            self.buttonStatus = (self.buttonStatus == .normal ? .selected : .normal )
+        }, completion: { isFinished in
+            self.contentPercent = 0.0
+        })
+    }
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
+        
+        contentPercent = 0.0
+    }
+    
 }
