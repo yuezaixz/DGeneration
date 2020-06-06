@@ -21,6 +21,7 @@
 		A61211832488049C0085F03C /* DGHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61211822488049C0085F03C /* DGHomeHeaderView.xib */; };
 		A6148DE5248B47EB0042858C /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DE4248B47EB0042858C /* UIView+Ex.swift */; };
 		A6148DE8248B48C50042858C /* NSObject+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DE7248B48C50042858C /* NSObject+Ex.swift */; };
+		A6148DF1248BEA720042858C /* DGCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6148DEF248BEA4C0042858C /* DGCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A6437D6C248690BF00C28BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D6B248690BF00C28BA5 /* AppDelegate.swift */; };
 		A6437D70248690BF00C28BA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D6F248690BF00C28BA5 /* ViewController.swift */; };
 		A6437D73248690BF00C28BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6437D71248690BF00C28BA5 /* Main.storyboard */; };
@@ -40,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A6148DEE248BEA4C0042858C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6148DEA248BEA4C0042858C /* DGCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A6437DC22486A04D00C28BA5;
+			remoteInfo = DGCore;
+		};
 		A6437D7F248690C100C28BA5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A6437D60248690BF00C28BA5 /* Project object */;
@@ -70,6 +78,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A6148DF1248BEA720042858C /* DGCore.framework in CopyFiles */,
 				A6BAC7B02486AAD30022B596 /* DGUIKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +104,7 @@
 		A61211822488049C0085F03C /* DGHomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGHomeHeaderView.xib; sourceTree = "<group>"; };
 		A6148DE4248B47EB0042858C /* UIView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
 		A6148DE7248B48C50042858C /* NSObject+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ex.swift"; sourceTree = "<group>"; };
+		A6148DEA248BEA4C0042858C /* DGCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DGCore.xcodeproj; path = DGCore/DGCore.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A6437D68248690BF00C28BA5 /* DGeneration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGeneration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6437D6B248690BF00C28BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6437D6F248690BF00C28BA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +245,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		A6148DEB248BEA4C0042858C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6148DEF248BEA4C0042858C /* DGCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A6437D5F248690BF00C28BA5 = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +336,7 @@
 		A6BAC7A82486AA7C0022B596 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				A6148DEA248BEA4C0042858C /* DGCore.xcodeproj */,
 				A6BAC7A92486AA910022B596 /* DGUIKit.xcodeproj */,
 			);
 			path = Dependencies;
@@ -439,6 +458,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = A6148DEB248BEA4C0042858C /* Products */;
+					ProjectRef = A6148DEA248BEA4C0042858C /* DGCore.xcodeproj */;
+				},
+				{
 					ProductGroup = A6BAC7AA2486AA910022B596 /* Products */;
 					ProjectRef = A6BAC7A92486AA910022B596 /* DGUIKit.xcodeproj */;
 				},
@@ -453,6 +476,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		A6148DEF248BEA4C0042858C /* DGCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DGCore.framework;
+			remoteRef = A6148DEE248BEA4C0042858C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		A6BAC7AE2486AA910022B596 /* DGUIKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
