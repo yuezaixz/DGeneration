@@ -19,6 +19,8 @@
 		A612117F2487FBF30085F03C /* DGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A612117E2487FBF30085F03C /* DGHomeViewController.swift */; };
 		A6121181248804900085F03C /* DGHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6121180248804900085F03C /* DGHomeHeaderView.swift */; };
 		A61211832488049C0085F03C /* DGHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61211822488049C0085F03C /* DGHomeHeaderView.xib */; };
+		A6148DE5248B47EB0042858C /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DE4248B47EB0042858C /* UIView+Ex.swift */; };
+		A6148DE8248B48C50042858C /* NSObject+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DE7248B48C50042858C /* NSObject+Ex.swift */; };
 		A6437D6C248690BF00C28BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D6B248690BF00C28BA5 /* AppDelegate.swift */; };
 		A6437D70248690BF00C28BA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D6F248690BF00C28BA5 /* ViewController.swift */; };
 		A6437D73248690BF00C28BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6437D71248690BF00C28BA5 /* Main.storyboard */; };
@@ -91,6 +93,8 @@
 		A612117E2487FBF30085F03C /* DGHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHomeViewController.swift; sourceTree = "<group>"; };
 		A6121180248804900085F03C /* DGHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHomeHeaderView.swift; sourceTree = "<group>"; };
 		A61211822488049C0085F03C /* DGHomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGHomeHeaderView.xib; sourceTree = "<group>"; };
+		A6148DE4248B47EB0042858C /* UIView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
+		A6148DE7248B48C50042858C /* NSObject+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ex.swift"; sourceTree = "<group>"; };
 		A6437D68248690BF00C28BA5 /* DGeneration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGeneration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6437D6B248690BF00C28BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6437D6F248690BF00C28BA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				A605A46D24888EC2007D0228 /* RxSwift */,
+				A6148DE4248B47EB0042858C /* UIView+Ex.swift */,
+				A6148DE7248B48C50042858C /* NSObject+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -606,8 +612,10 @@
 				A605A47924888EC2007D0228 /* Observable+Operators.swift in Sources */,
 				A605A46924888B62007D0228 /* DGConstant.swift in Sources */,
 				A6437D6C248690BF00C28BA5 /* AppDelegate.swift in Sources */,
+				A6148DE8248B48C50042858C /* NSObject+Ex.swift in Sources */,
 				A6B43BC42489549900799250 /* DGBaseSegmentViewController.swift in Sources */,
 				A6B43BB82489486800799250 /* DWFloatingButton.swift in Sources */,
+				A6148DE5248B47EB0042858C /* UIView+Ex.swift in Sources */,
 				A6B43BBC248952A600799250 /* DGSegmentContainerView.swift in Sources */,
 				A6B43BBA248951EB00799250 /* DGSegmentView.swift in Sources */,
 			);

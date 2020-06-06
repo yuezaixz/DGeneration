@@ -50,7 +50,7 @@ class DGSegmentContainerView: UIView {
     }
     
     func initialUI() {
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = kAppBGColor
         
         listContainerView = JXSegmentedListContainerView(dataSource: self)
         listVCContainer.addSubview(listContainerView)
