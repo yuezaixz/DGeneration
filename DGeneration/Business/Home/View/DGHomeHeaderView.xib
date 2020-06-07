@@ -13,6 +13,7 @@
                 <outlet property="daysFloatingButton" destination="bBg-cG-dxY" id="a1P-WP-swf"/>
                 <outlet property="doneFloatingButton" destination="QL1-Iq-NLZ" id="Oaz-4o-CXw"/>
                 <outlet property="imageView" destination="IGK-dQ-j2q" id="S28-4u-DRL"/>
+                <outlet property="nameLabel" destination="PiN-Bf-2ny" id="4m3-wm-MPI"/>
                 <outlet property="remainFloatingButton" destination="tOn-hA-KH0" id="QNR-yj-pZr"/>
             </connections>
         </placeholder>

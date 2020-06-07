@@ -13,6 +13,7 @@ class DGHomeViewController: DGBaseViewController {
     
     @IBOutlet weak var scrollView: DGMultiResponseScrollView!
     @IBOutlet weak var headView: UIView!
+    @IBOutlet weak var homeHeaderView: DGHomeHeaderView!
     @IBOutlet weak var headHeight: NSLayoutConstraint!
     
     @IBOutlet weak var headerTopHeight: NSLayoutConstraint!
@@ -37,6 +38,17 @@ class DGHomeViewController: DGBaseViewController {
         
         // 暂时写死，这个250就是segmentView起始的高度
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
+        scrollView.rx.contentOffset
+            .map { $0.y }.map{ [weak self] offsetY -> CGFloat in
+                guard let self = self, self.maxOffset > 0 else { return 0 }
+                return min(offsetY / self.maxOffset, 1.0)
+            }.bind(to: homeHeaderView.rx.scrollPercent)
+            .disposed(by: rx.disposeBag)
+            
+//            .subscribe(onNext: { offsetY in
+//            print(offsetY)
+//        }).disposed(by: rx.disposeBag)
     }
     
     // MARK: - UI About

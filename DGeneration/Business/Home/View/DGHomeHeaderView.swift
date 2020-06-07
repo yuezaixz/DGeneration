@@ -14,6 +14,9 @@ class DGHomeHeaderView: UIView {
     @IBOutlet weak var doneFloatingButton: DWFloatingButton!
     @IBOutlet weak var remainFloatingButton: DWFloatingButton!
     @IBOutlet weak var daysFloatingButton: DWFloatingButton!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    var xTitleTranformOffset: CGFloat = 0.0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -53,6 +56,29 @@ class DGHomeHeaderView: UIView {
         remainFloatingButton.subText = "Remain"
         daysFloatingButton.text = "4"
         daysFloatingButton.subText = "Days"
+        
+        updateAfterLayout()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        updateAfterLayout()
+    }
+    
+    private func updateAfterLayout() {
+        xTitleTranformOffset = contentView.center.x - nameLabel.center.x
     }
 
+}
+
+extension Reactive where Base: DGHomeHeaderView {
+    var scrollPercent: Binder<CGFloat> {
+        return Binder(self.base) { headerView, percent in
+            headerView.doneFloatingButton.alpha = 1 - percent
+            headerView.remainFloatingButton.alpha = 1 - percent
+            headerView.daysFloatingButton.alpha = 1 - percent
+            
+            headerView.nameLabel.transform = CGAffineTransform(translationX: headerView.xTitleTranformOffset * min(1.0, percent * 4), y: 171.0 * max(0, percent - (1.0 / 4.0)) * (4.0 / 3.0)).scaledBy(x: 1.0 + percent * 0.1, y: 1.0 + percent * 0.1)
+        }
+    }
 }

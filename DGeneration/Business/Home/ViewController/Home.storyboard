@@ -74,6 +74,7 @@
                         <outlet property="headHeight" destination="Jep-ds-Ebq" id="Iwq-cX-sJc"/>
                         <outlet property="headView" destination="4Cv-OC-pjd" id="EbP-nM-Nh5"/>
                         <outlet property="headerTopHeight" destination="69Y-Ba-Fwf" id="Iug-Cr-2fK"/>
+                        <outlet property="homeHeaderView" destination="UMN-mK-ce2" id="o6k-pS-0eM"/>
                         <outlet property="scrollView" destination="ngJ-XI-UZ7" id="w1t-hk-N1u"/>
                         <outlet property="segmentContainerView" destination="8UU-hy-3pV" id="6LV-sh-IcF"/>
                     </connections>
