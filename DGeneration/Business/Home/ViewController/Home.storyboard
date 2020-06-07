@@ -222,7 +222,56 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c49-PS-jQU" customClass="EMTNeumorphicView" customModule="EMTNeumorphicView">
                                                     <rect key="frame" x="20" y="10" width="374" height="108"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LeetCode 3 question /per day" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ida-pQ-92C">
+                                                            <rect key="frame" x="23" y="13" width="261" height="19.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                            <color key="textColor" red="0.23921568627450979" green="0.50980392156862742" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dg_leetcode_icon" translatesAutoresizingMaskIntoConstraints="NO" id="4lQ-Ck-bcl">
+                                                            <rect key="frame" x="304" y="8" width="62" height="62"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="62" id="7W2-nz-ubh"/>
+                                                                <constraint firstAttribute="height" constant="62" id="Xa3-TT-EwY"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gl-g9-Hcr">
+                                                            <rect key="frame" x="23" y="40.5" width="48" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                            <color key="textColor" red="0.23921568630000001" green="0.50980392159999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEh-Is-zLi">
+                                                            <rect key="frame" x="23" y="75.5" width="166" height="14"/>
+                                                            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="166" id="boh-zt-SZG"/>
+                                                                <constraint firstAttribute="height" constant="14" id="wDl-Jw-X8L"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="73 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thW-bJ-XMj">
+                                                            <rect key="frame" x="309.5" y="86" width="51" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                            <color key="textColor" red="0.23921568630000001" green="0.50980392159999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="JEh-Is-zLi" firstAttribute="top" secondItem="9gl-g9-Hcr" secondAttribute="bottom" constant="15" id="2lA-FH-6um"/>
+                                                        <constraint firstItem="JEh-Is-zLi" firstAttribute="leading" secondItem="9gl-g9-Hcr" secondAttribute="leading" id="5XV-Gw-43i"/>
+                                                        <constraint firstItem="Ida-pQ-92C" firstAttribute="leading" secondItem="c49-PS-jQU" secondAttribute="leading" constant="23" id="JGL-M8-anT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4lQ-Ck-bcl" secondAttribute="trailing" constant="8" id="N8U-M3-Pp1"/>
+                                                        <constraint firstItem="4lQ-Ck-bcl" firstAttribute="top" secondItem="c49-PS-jQU" secondAttribute="top" constant="8" id="W2G-Ky-ob2"/>
+                                                        <constraint firstItem="4lQ-Ck-bcl" firstAttribute="leading" secondItem="Ida-pQ-92C" secondAttribute="trailing" constant="20" id="ZLY-O7-GjZ"/>
+                                                        <constraint firstItem="thW-bJ-XMj" firstAttribute="centerX" secondItem="4lQ-Ck-bcl" secondAttribute="centerX" id="cWV-JI-kjA"/>
+                                                        <constraint firstItem="9gl-g9-Hcr" firstAttribute="leading" secondItem="Ida-pQ-92C" secondAttribute="leading" id="hlc-hp-gdF"/>
+                                                        <constraint firstItem="9gl-g9-Hcr" firstAttribute="top" secondItem="Ida-pQ-92C" secondAttribute="bottom" constant="8" id="lTO-vj-SfG"/>
+                                                        <constraint firstItem="Ida-pQ-92C" firstAttribute="top" secondItem="c49-PS-jQU" secondAttribute="top" constant="13" id="naQ-L1-fzK"/>
+                                                        <constraint firstItem="thW-bJ-XMj" firstAttribute="top" secondItem="4lQ-Ck-bcl" secondAttribute="bottom" constant="16" id="rNC-Rk-gKn"/>
+                                                        <constraint firstAttribute="bottom" secondItem="JEh-Is-zLi" secondAttribute="bottom" priority="250" constant="18" id="viq-fy-FZW"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -263,4 +312,7 @@
             <point key="canvasLocation" x="815.94202898550736" y="-135.26785714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dg_leetcode_icon" width="62" height="62"/>
+    </resources>
 </document>
