@@ -43,7 +43,13 @@ extension DGHomeDailyListViewController: UICollectionViewDelegate, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        collectionView.dequeueReusableCell(withReuseIdentifier: DGHomeDailyHabitCell.kReuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DGHomeDailyHabitCell.kReuseIdentifier, for: indexPath)
+        
+        if let cell = cell as? DGHomeDailyHabitCell {
+            cell.cellIndex = indexPath.row
+        }
+        
+        return cell
     }
     
     
