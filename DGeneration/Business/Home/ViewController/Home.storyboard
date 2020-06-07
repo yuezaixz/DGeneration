@@ -111,15 +111,71 @@
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DGHomeDailyHabitCell" id="3VH-k3-EPU" customClass="DGHomeDailyHabitCell" customModule="DGeneration" customModuleProvider="target">
-                                                    <rect key="frame" x="22" y="30" width="140" height="168"/>
+                                                    <rect key="frame" x="22" y="30" width="150" height="168"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8UE-Ws-4Se">
-                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="168"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="168"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hi1-ov-yBA" customClass="EMTNeumorphicView" customModule="EMTNeumorphicView">
-                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="168"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="168"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObR-Nt-YH6">
+                                                                        <rect key="frame" x="10" y="19" width="55" height="19.5"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leaning Skills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mJ-Nz-zO8">
+                                                                        <rect key="frame" x="12" y="51.5" width="114" height="25"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leaning Skills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3d-Ww-acf">
+                                                                        <rect key="frame" x="12" y="80.5" width="89" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leaning Skills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUB-XR-gTS">
+                                                                        <rect key="frame" x="12" y="104.5" width="89" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leaning Skills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcV-kF-eCS">
+                                                                        <rect key="frame" x="12" y="128.5" width="89" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAA-R2-BVl">
+                                                                        <rect key="frame" x="12" y="152.5" width="12.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="W3d-Ww-acf" firstAttribute="leading" secondItem="hi1-ov-yBA" secondAttribute="leading" constant="12" id="2Bv-XW-rww"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W3d-Ww-acf" secondAttribute="trailing" constant="12" id="4lo-0p-0a4"/>
+                                                                    <constraint firstItem="ObR-Nt-YH6" firstAttribute="top" secondItem="hi1-ov-yBA" secondAttribute="top" constant="19" id="5AV-Mq-ezK"/>
+                                                                    <constraint firstItem="lcV-kF-eCS" firstAttribute="leading" secondItem="hi1-ov-yBA" secondAttribute="leading" constant="12" id="6QW-ZD-eIf"/>
+                                                                    <constraint firstItem="lcV-kF-eCS" firstAttribute="top" secondItem="GUB-XR-gTS" secondAttribute="bottom" constant="4" id="Bl8-ht-QEj"/>
+                                                                    <constraint firstItem="GUB-XR-gTS" firstAttribute="leading" secondItem="hi1-ov-yBA" secondAttribute="leading" constant="12" id="Kqy-3m-xii"/>
+                                                                    <constraint firstItem="4mJ-Nz-zO8" firstAttribute="top" secondItem="ObR-Nt-YH6" secondAttribute="bottom" constant="13" id="NAc-pr-ai5"/>
+                                                                    <constraint firstItem="GUB-XR-gTS" firstAttribute="top" secondItem="W3d-Ww-acf" secondAttribute="bottom" constant="4" id="PTm-4I-5lH"/>
+                                                                    <constraint firstItem="QAA-R2-BVl" firstAttribute="leading" secondItem="hi1-ov-yBA" secondAttribute="leading" constant="12" id="avA-Cx-S2E"/>
+                                                                    <constraint firstItem="QAA-R2-BVl" firstAttribute="top" secondItem="lcV-kF-eCS" secondAttribute="bottom" constant="4" id="jPq-0i-K1t"/>
+                                                                    <constraint firstItem="ObR-Nt-YH6" firstAttribute="leading" secondItem="hi1-ov-yBA" secondAttribute="leading" constant="10" id="kaA-uy-u8I"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lcV-kF-eCS" secondAttribute="trailing" constant="12" id="mTp-hA-rAB"/>
+                                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GUB-XR-gTS" secondAttribute="trailing" constant="12" id="nIo-EL-Jw3"/>
+                                                                    <constraint firstAttribute="width" constant="150" id="pEF-zS-Hsc"/>
+                                                                    <constraint firstItem="4mJ-Nz-zO8" firstAttribute="leading" secondItem="hi1-ov-yBA" secondAttribute="leading" constant="12" id="q1B-GD-SZY"/>
+                                                                    <constraint firstItem="W3d-Ww-acf" firstAttribute="top" secondItem="4mJ-Nz-zO8" secondAttribute="bottom" constant="4" id="sqH-z2-LtJ"/>
+                                                                </constraints>
                                                             </view>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -132,7 +188,13 @@
                                                     </collectionViewCellContentView>
                                                     <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
+                                                        <outlet property="amountLabel" destination="ObR-Nt-YH6" id="0St-ds-ONX"/>
+                                                        <outlet property="clipTitleLabel" destination="QAA-R2-BVl" id="OxX-YM-y2i"/>
                                                         <outlet property="containerView" destination="hi1-ov-yBA" id="TMi-IQ-i3H"/>
+                                                        <outlet property="titleLabel" destination="4mJ-Nz-zO8" id="szU-h7-BQ2"/>
+                                                        <outletCollection property="subTitleLabels" destination="W3d-Ww-acf" collectionClass="NSMutableArray" id="yXD-g2-MAg"/>
+                                                        <outletCollection property="subTitleLabels" destination="GUB-XR-gTS" collectionClass="NSMutableArray" id="Up7-zm-BVa"/>
+                                                        <outletCollection property="subTitleLabels" destination="lcV-kF-eCS" collectionClass="NSMutableArray" id="3sc-VY-FaD"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>

@@ -47,6 +47,12 @@ extension DGHomeDailyListViewController: UICollectionViewDelegate, UICollectionV
         
         if let cell = cell as? DGHomeDailyHabitCell {
             cell.cellIndex = indexPath.row
+            switch indexPath.row {
+            case 0:
+                cell.setUpData(amount: 10, title: "Leaning Skills", strs: ["LeetCode 3 question per day", "Study English 30 minutes per day", "Read Medium 30 minutes per day"])
+            default:
+                cell.setUpData(amount: 6, title: "Keep Fit", strs: ["Run 10 kilometers", "Table support 10 minutes per day", "Drink 1L Water"])
+            }
         }
         
         return cell
