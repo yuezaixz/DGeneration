@@ -14,6 +14,9 @@ let kAppBGColor = UIColor.init(hex: 0xFAFAFA)
 let kAppTitleColor = UIColor.init(hex: 0x333333)
 let kAppSubTitleColor = UIColor.init(hex: 0x999999)
 
+/***********UI相关****************/
+let kAppStatusBarHeight = UIApplication.shared.delegate?.window??.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+
 /***********多语言****************/
 public func localizedString(_ key: String) -> String {
     return Bundle.localizedString(key: key, bundleName: "VVHelper")

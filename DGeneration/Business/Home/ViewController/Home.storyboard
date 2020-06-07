@@ -16,11 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngJ-XI-UZ7">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngJ-XI-UZ7" customClass="DGMultiResponseScrollView" customModule="DGeneration" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Cv-OC-pjd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMN-mK-ce2" customClass="DGHomeHeaderView" customModule="DGeneration" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44" width="414" height="250"/>
+                                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="deviceRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="Jep-ds-Ebq"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="UMN-mK-ce2" firstAttribute="top" secondItem="4Cv-OC-pjd" secondAttribute="top" constant="44" id="69Y-Ba-Fwf"/>
+                                            <constraint firstItem="UMN-mK-ce2" firstAttribute="leading" secondItem="4Cv-OC-pjd" secondAttribute="leading" id="8tt-qa-7R0"/>
+                                            <constraint firstAttribute="bottom" secondItem="UMN-mK-ce2" secondAttribute="bottom" id="FfN-Xg-CbL"/>
+                                            <constraint firstAttribute="trailing" secondItem="UMN-mK-ce2" secondAttribute="trailing" id="FgR-dH-HLp"/>
+                                        </constraints>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UU-hy-3pV" customClass="DGSegmentContainerView" customModule="DGeneration" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44" width="414" height="748"/>
+                                        <rect key="frame" x="0.0" y="294" width="414" height="748"/>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="748" id="lIe-6a-7Gv"/>
@@ -28,52 +47,33 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="4Cv-OC-pjd" firstAttribute="top" secondItem="ngJ-XI-UZ7" secondAttribute="top" id="FeB-0I-iKU"/>
                                     <constraint firstAttribute="trailing" secondItem="8UU-hy-3pV" secondAttribute="trailing" id="VYs-Ai-8G2"/>
                                     <constraint firstItem="8UU-hy-3pV" firstAttribute="width" secondItem="ngJ-XI-UZ7" secondAttribute="width" id="Y4u-VO-MBk"/>
-                                    <constraint firstItem="8UU-hy-3pV" firstAttribute="top" secondItem="ngJ-XI-UZ7" secondAttribute="top" id="Y5J-NT-V8N"/>
                                     <constraint firstItem="8UU-hy-3pV" firstAttribute="leading" secondItem="ngJ-XI-UZ7" secondAttribute="leading" id="eNv-gk-FMb"/>
                                     <constraint firstAttribute="bottom" secondItem="8UU-hy-3pV" secondAttribute="bottom" id="gje-Ro-09K"/>
+                                    <constraint firstItem="4Cv-OC-pjd" firstAttribute="leading" secondItem="ngJ-XI-UZ7" secondAttribute="leading" id="n5D-gA-duo"/>
+                                    <constraint firstItem="8UU-hy-3pV" firstAttribute="top" secondItem="4Cv-OC-pjd" secondAttribute="bottom" id="oJm-qe-4ou"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Cv-OC-pjd" secondAttribute="trailing" id="uaf-V1-vUv"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="cf6-14-szW" id="FL5-oN-Oo5"/>
                                 </connections>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Cv-OC-pjd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="302"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMN-mK-ce2" customClass="DGHomeHeaderView" customModule="DGeneration" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="52" width="414" height="250"/>
-                                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="deviceRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="250" id="Jep-ds-Ebq"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstItem="UMN-mK-ce2" firstAttribute="leading" secondItem="4Cv-OC-pjd" secondAttribute="leading" id="8tt-qa-7R0"/>
-                                    <constraint firstAttribute="bottom" secondItem="UMN-mK-ce2" secondAttribute="bottom" id="FfN-Xg-CbL"/>
-                                    <constraint firstAttribute="trailing" secondItem="UMN-mK-ce2" secondAttribute="trailing" id="FgR-dH-HLp"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZT7-Vh-KvD" firstAttribute="trailing" secondItem="ngJ-XI-UZ7" secondAttribute="trailing" id="Lcy-gL-cqO"/>
                             <constraint firstItem="ngJ-XI-UZ7" firstAttribute="top" secondItem="hGP-xj-euh" secondAttribute="top" id="PR9-5o-Zg7"/>
                             <constraint firstItem="ngJ-XI-UZ7" firstAttribute="leading" secondItem="ZT7-Vh-KvD" secondAttribute="leading" id="RhL-Wl-e3Y"/>
-                            <constraint firstItem="UMN-mK-ce2" firstAttribute="top" secondItem="ZT7-Vh-KvD" secondAttribute="top" constant="8" id="XB2-NK-ifS"/>
                             <constraint firstAttribute="bottom" secondItem="ngJ-XI-UZ7" secondAttribute="bottom" id="b2w-nt-ukf"/>
-                            <constraint firstItem="8UU-hy-3pV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZT7-Vh-KvD" secondAttribute="top" id="byZ-da-vbC"/>
-                            <constraint firstItem="4Cv-OC-pjd" firstAttribute="trailing" secondItem="ZT7-Vh-KvD" secondAttribute="trailing" id="d4x-gJ-aPL"/>
-                            <constraint firstItem="4Cv-OC-pjd" firstAttribute="top" secondItem="hGP-xj-euh" secondAttribute="top" id="r6Z-BB-mBj"/>
-                            <constraint firstItem="4Cv-OC-pjd" firstAttribute="leading" secondItem="ZT7-Vh-KvD" secondAttribute="leading" id="ses-Xf-HEY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZT7-Vh-KvD"/>
                     </view>
                     <connections>
                         <outlet property="headHeight" destination="Jep-ds-Ebq" id="Iwq-cX-sJc"/>
                         <outlet property="headView" destination="4Cv-OC-pjd" id="EbP-nM-Nh5"/>
+                        <outlet property="headerTopHeight" destination="69Y-Ba-Fwf" id="Iug-Cr-2fK"/>
                         <outlet property="scrollView" destination="ngJ-XI-UZ7" id="w1t-hk-N1u"/>
                         <outlet property="segmentContainerView" destination="8UU-hy-3pV" id="6LV-sh-IcF"/>
                     </connections>

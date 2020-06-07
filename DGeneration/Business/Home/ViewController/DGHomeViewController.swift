@@ -11,11 +11,19 @@ import DGUIKit
 
 class DGHomeViewController: DGBaseViewController {
     
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var scrollView: DGMultiResponseScrollView!
     @IBOutlet weak var headView: UIView!
     @IBOutlet weak var headHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var headerTopHeight: NSLayoutConstraint!
+    
     @IBOutlet weak var segmentContainerView: DGSegmentContainerView!
+    
+    // 穿透吸顶相关
+    var superCanScroll = true
+    var maxOffset: CGFloat {
+        headView.height - 44 - kAppStatusBarHeight
+    }
     
     // MARK: - Life Cycle
     
@@ -28,14 +36,14 @@ class DGHomeViewController: DGBaseViewController {
         }
         
         // 暂时写死，这个250就是segmentView起始的高度
-        scrollView.contentInset = UIEdgeInsets(top: 250 + UIApplication.shared.statusBarFrame.size.height, left: 0, bottom: 0, right: 0)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
     // MARK: - UI About
     
     override func makeUI() {
         super.makeUI()
-        
+        headerTopHeight.constant = kAppStatusBarHeight
     }
     
     // MARK: - View Model
@@ -59,6 +67,18 @@ class DGHomeViewController: DGBaseViewController {
 
 extension DGHomeViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+       if !superCanScroll {
+           scrollView.contentOffset.y = maxOffset
+//        segmentContainerView.segmentContainerViewModel?.currentMainViewController?
+//           mainView.freshStoreViewModel?.currentMainViewController?.childCanScroll = true
+       } else {
+           if scrollView.contentOffset.y >= maxOffset {
+               scrollView.contentOffset.y = maxOffset
+               superCanScroll = false
+//               mainView.freshStoreViewModel?.currentMainViewController?.childCanScroll = true
+           }
+       }
+        
         // TODO 控制头部高度
         
 //        let dynamicHeadHeight = 250 - scrollView.contentOffset.y
