@@ -9,7 +9,7 @@
 import UIKit
 import EMTNeumorphicView
 
-class DGHomeDailyListViewController: DGBaseSegmentViewController {
+class DGHomeDailyListViewController: DGBaseSegmentScrollViewController {
     @IBOutlet weak var dailyTableView: UITableView!
     @IBOutlet weak var habitCollectionView: UICollectionView!
     
@@ -23,6 +23,19 @@ class DGHomeDailyListViewController: DGBaseSegmentViewController {
         }
     }
 
+}
+
+extension DGHomeDailyListViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if !childCanScroll {
+            scrollView.contentOffset.y = 0
+        } else {
+            if scrollView.contentOffset.y <= 0 {
+                childCanScroll = false
+                superCanScrollBlock?(true)
+            }
+        }
+    }
 }
 
 extension DGHomeDailyListViewController: UITableViewDelegate, UITableViewDataSource {

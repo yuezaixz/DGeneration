@@ -19,14 +19,19 @@ protocol DGSegmentContainerBaseBehavior {
     var subViewControllers: [DGBaseSegmentViewController] { get set }
 }
 
-protocol DGSegmentContainerScrollBehavior: DGSegmentContainerBaseBehavior {
+protocol DGSegmentContainerScrollBehavior {
+    
+    var segmentCount: Int { get }
+    var segmentTitles: [String] { get set }
+    
+    var selectIndex: Int { get set }
     
     var scrolling: Bool { get set }
     
     var superCanScrollBlock: ((Bool) -> Void)? { get set }
     
-    var currentMainViewController: DGChildScrollableProtocol? { get }
-    var subViewControllers: [DGChildScrollableProtocol] { get set }
+    var currentMainViewController: DGBaseSegmentScrollViewController? { get }
+    var subViewControllers: [DGBaseSegmentScrollViewController] { get set }
 }
 
 class DGSegmentListViewModel: DGSegmentContainerBaseBehavior {
@@ -53,5 +58,37 @@ class DGSegmentListViewModel: DGSegmentContainerBaseBehavior {
     }
     
     var subViewControllers: [DGBaseSegmentViewController] = []
+    
+}
+
+class DGSegmentListScrollViewModel: DGSegmentContainerScrollBehavior {
+    
+    
+    var scrolling: Bool = false
+    
+    var superCanScrollBlock: ((Bool) -> Void)?
+    
+    // MARK: - Input
+    
+    var selectIndex: Int = 0
+    
+    // MARK: - Output
+    
+    var segmentCount: Int { segmentTitles.count }
+    
+    var segmentTitles: [String] = []
+    
+    // MARK: - Input & Output
+    
+    var segmentScrolling = BehaviorRelay<Bool>(value: false)
+    
+    var headerOffset = BehaviorRelay<CGFloat>(value: 0.0)
+    var headerIsExpand = BehaviorRelay<Bool>(value: false)
+    
+    var currentMainViewController: DGBaseSegmentScrollViewController?{
+        selectIndex < subViewControllers.count ? subViewControllers[selectIndex] : nil
+    }
+    
+    var subViewControllers: [DGBaseSegmentScrollViewController] = []
     
 }

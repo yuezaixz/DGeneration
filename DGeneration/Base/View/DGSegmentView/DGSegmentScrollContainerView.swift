@@ -1,15 +1,15 @@
 //
-//  DGSegmentContainerView.swift
+//  DGSegmentScrollContainerView.swift
 //  DGeneration
 //
-//  Created by 吴迪玮 on 2020/6/5.
+//  Created by 吴迪玮 on 2020/6/7.
 //  Copyright © 2020 davidandty. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import JXSegmentedView
 
-class DGSegmentContainerView: UIView {
+class DGSegmentScrollContainerView: UIView {
     
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var segmentView: DGSegmentView!
@@ -18,7 +18,7 @@ class DGSegmentContainerView: UIView {
     var listContainerView: JXSegmentedListContainerView!
     
     // MARK: - Input
-    var segmentContainerViewModel: DGSegmentContainerBaseBehavior?
+    var segmentContainerViewModel: DGSegmentContainerScrollBehavior?
     
     // MARK: - Output
     
@@ -41,8 +41,8 @@ class DGSegmentContainerView: UIView {
     }
     
     func initFromXib() {
-        let bundle = Bundle.init(for: DGSegmentContainerView.self)
-        let nib = UINib(nibName: "DGSegmentContainerView", bundle: bundle)
+        let bundle = Bundle.init(for: DGSegmentScrollContainerView.self)
+        let nib = UINib(nibName: "DGSegmentScrollContainerView", bundle: bundle)
         contentView = nib.instantiate(withOwner: self, options: nil)[0] as? UIView
         contentView.frame = bounds
         self.addSubview(contentView)
@@ -70,7 +70,7 @@ class DGSegmentContainerView: UIView {
     
 }
 
-extension DGSegmentContainerView: JXSegmentedViewDelegate {
+extension DGSegmentScrollContainerView: JXSegmentedViewDelegate {
     
     func segmentedView(_ segmentedView: JXSegmentedView, didSelectedItemAt index: Int) {
         segmentContainerViewModel?.selectIndex = index
@@ -91,7 +91,7 @@ extension DGSegmentContainerView: JXSegmentedViewDelegate {
     }
 }
 
-extension DGSegmentContainerView: JXSegmentedListContainerViewDataSource {
+extension DGSegmentScrollContainerView: JXSegmentedListContainerViewDataSource {
     
     func numberOfLists(in listContainerView: JXSegmentedListContainerView) -> Int {
         segmentContainerViewModel?.segmentCount ?? 0

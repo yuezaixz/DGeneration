@@ -38,7 +38,7 @@
                                             <constraint firstAttribute="trailing" secondItem="UMN-mK-ce2" secondAttribute="trailing" id="FgR-dH-HLp"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UU-hy-3pV" customClass="DGSegmentContainerView" customModule="DGeneration" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UU-hy-3pV" customClass="DGSegmentScrollContainerView" customModule="DGeneration" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="294" width="414" height="748"/>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>

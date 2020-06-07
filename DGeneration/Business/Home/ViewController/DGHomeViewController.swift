@@ -17,7 +17,7 @@ class DGHomeViewController: DGBaseViewController {
     
     @IBOutlet weak var headerTopHeight: NSLayoutConstraint!
     
-    @IBOutlet weak var segmentContainerView: DGSegmentContainerView!
+    @IBOutlet weak var segmentContainerView: DGSegmentScrollContainerView!
     
     // 穿透吸顶相关
     var superCanScroll = true
@@ -54,10 +54,14 @@ class DGHomeViewController: DGBaseViewController {
     }
     
     private func initSegmentView() {
-        let viewModel = DGSegmentListViewModel()
+        let viewModel = DGSegmentListScrollViewModel()
         viewModel.segmentTitles = ["Done", "Today", "Habits", "Other"]
         viewModel.subViewControllers = viewModel.segmentTitles.map { _ in
-            UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "DGHomeDailyListViewController") as! DGHomeDailyListViewController
+            let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "DGHomeDailyListViewController") as! DGHomeDailyListViewController
+            vc.superCanScrollBlock = { [weak self] superCanScroll in
+                self?.superCanScroll = superCanScroll
+            }
+            return vc
         }
         segmentContainerView.segmentContainerViewModel = viewModel
         segmentContainerView.reload()
@@ -67,16 +71,15 @@ class DGHomeViewController: DGBaseViewController {
 
 extension DGHomeViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-       if !superCanScroll {
-           scrollView.contentOffset.y = maxOffset
-//        segmentContainerView.segmentContainerViewModel?.currentMainViewController?
-//           mainView.freshStoreViewModel?.currentMainViewController?.childCanScroll = true
-       } else {
-           if scrollView.contentOffset.y >= maxOffset {
-               scrollView.contentOffset.y = maxOffset
-               superCanScroll = false
-//               mainView.freshStoreViewModel?.currentMainViewController?.childCanScroll = true
-           }
+        if !superCanScroll {
+            scrollView.contentOffset.y = maxOffset
+            segmentContainerView.segmentContainerViewModel?.currentMainViewController?.childCanScroll = true
+        } else {
+            if scrollView.contentOffset.y >= maxOffset {
+                scrollView.contentOffset.y = maxOffset
+                superCanScroll = false
+                segmentContainerView.segmentContainerViewModel?.currentMainViewController?.childCanScroll = true
+            }
        }
         
         // TODO 控制头部高度

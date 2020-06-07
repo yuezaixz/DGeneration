@@ -18,3 +18,13 @@ extension DGBaseSegmentViewController: JXSegmentedListContainerViewListDelegate 
         view
     }
 }
+
+class DGBaseSegmentScrollViewController: DGBaseSegmentViewController, DGChildScrollableProtocol {
+    var childCanScroll: Bool = false
+    
+    var isActivity: Bool = false
+    
+    var superCanScrollBlock: ((Bool) -> Void)?
+    
+    
+}

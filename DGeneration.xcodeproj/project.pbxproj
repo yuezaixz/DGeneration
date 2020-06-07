@@ -26,6 +26,8 @@
 		A6148DFA248C80CE0042858C /* DGHomeDailyItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DF9248C80CE0042858C /* DGHomeDailyItemCell.swift */; };
 		A6148DFC248C80EE0042858C /* DGHomeDailyHabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DFB248C80EE0042858C /* DGHomeDailyHabitCell.swift */; };
 		A6148E01248CE5DF0042858C /* DwActivityOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148E00248CE5DF0042858C /* DwActivityOverView.swift */; };
+		A6148E03248D2D510042858C /* DGSegmentScrollContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148E02248D2D510042858C /* DGSegmentScrollContainerView.swift */; };
+		A6148E05248D2DE10042858C /* DGSegmentScrollContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6148E04248D2DE10042858C /* DGSegmentScrollContainerView.xib */; };
 		A6437D6C248690BF00C28BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D6B248690BF00C28BA5 /* AppDelegate.swift */; };
 		A6437D70248690BF00C28BA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D6F248690BF00C28BA5 /* ViewController.swift */; };
 		A6437D73248690BF00C28BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6437D71248690BF00C28BA5 /* Main.storyboard */; };
@@ -113,6 +115,8 @@
 		A6148DF9248C80CE0042858C /* DGHomeDailyItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHomeDailyItemCell.swift; sourceTree = "<group>"; };
 		A6148DFB248C80EE0042858C /* DGHomeDailyHabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHomeDailyHabitCell.swift; sourceTree = "<group>"; };
 		A6148E00248CE5DF0042858C /* DwActivityOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DwActivityOverView.swift; sourceTree = "<group>"; };
+		A6148E02248D2D510042858C /* DGSegmentScrollContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSegmentScrollContainerView.swift; sourceTree = "<group>"; };
+		A6148E04248D2DE10042858C /* DGSegmentScrollContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGSegmentScrollContainerView.xib; sourceTree = "<group>"; };
 		A6437D68248690BF00C28BA5 /* DGeneration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGeneration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6437D6B248690BF00C28BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6437D6F248690BF00C28BA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -347,6 +351,8 @@
 				A6B43BB9248951EB00799250 /* DGSegmentView.swift */,
 				A6B43BBB248952A600799250 /* DGSegmentContainerView.swift */,
 				A6B43BC52489557500799250 /* DGSegmentContainerView.xib */,
+				A6148E02248D2D510042858C /* DGSegmentScrollContainerView.swift */,
+				A6148E04248D2DE10042858C /* DGSegmentScrollContainerView.xib */,
 				A6B43BBF2489538C00799250 /* DGSegmentViewModel.swift */,
 				A6B43BC32489549900799250 /* DGBaseSegmentViewController.swift */,
 			);
@@ -521,6 +527,7 @@
 				A6437D75248690C100C28BA5 /* Assets.xcassets in Resources */,
 				A6437D73248690BF00C28BA5 /* Main.storyboard in Resources */,
 				A612117D2487FA510085F03C /* Home.storyboard in Resources */,
+				A6148E05248D2DE10042858C /* DGSegmentScrollContainerView.xib in Resources */,
 				A61211832488049C0085F03C /* DGHomeHeaderView.xib in Resources */,
 				A6B43BC62489557500799250 /* DGSegmentContainerView.xib in Resources */,
 			);
@@ -660,6 +667,7 @@
 				A6148DFC248C80EE0042858C /* DGHomeDailyHabitCell.swift in Sources */,
 				A6437D70248690BF00C28BA5 /* ViewController.swift in Sources */,
 				A605A456248888B3007D0228 /* DGProjectHeader.swift in Sources */,
+				A6148E03248D2D510042858C /* DGSegmentScrollContainerView.swift in Sources */,
 				A605A46B24888C65007D0228 /* DGBaseNavigationController.swift in Sources */,
 				A605A47924888EC2007D0228 /* Observable+Operators.swift in Sources */,
 				A605A46924888B62007D0228 /* DGConstant.swift in Sources */,
