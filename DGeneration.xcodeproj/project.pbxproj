@@ -22,6 +22,9 @@
 		A6148DE5248B47EB0042858C /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DE4248B47EB0042858C /* UIView+Ex.swift */; };
 		A6148DE8248B48C50042858C /* NSObject+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DE7248B48C50042858C /* NSObject+Ex.swift */; };
 		A6148DF1248BEA720042858C /* DGCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6148DEF248BEA4C0042858C /* DGCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6148DF5248C7C8B0042858C /* DGHomeDailyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DF4248C7C8B0042858C /* DGHomeDailyListViewController.swift */; };
+		A6148DFA248C80CE0042858C /* DGHomeDailyItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DF9248C80CE0042858C /* DGHomeDailyItemCell.swift */; };
+		A6148DFC248C80EE0042858C /* DGHomeDailyHabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DFB248C80EE0042858C /* DGHomeDailyHabitCell.swift */; };
 		A6437D6C248690BF00C28BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D6B248690BF00C28BA5 /* AppDelegate.swift */; };
 		A6437D70248690BF00C28BA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6437D6F248690BF00C28BA5 /* ViewController.swift */; };
 		A6437D73248690BF00C28BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6437D71248690BF00C28BA5 /* Main.storyboard */; };
@@ -105,6 +108,9 @@
 		A6148DE4248B47EB0042858C /* UIView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
 		A6148DE7248B48C50042858C /* NSObject+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ex.swift"; sourceTree = "<group>"; };
 		A6148DEA248BEA4C0042858C /* DGCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DGCore.xcodeproj; path = DGCore/DGCore.xcodeproj; sourceTree = SOURCE_ROOT; };
+		A6148DF4248C7C8B0042858C /* DGHomeDailyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHomeDailyListViewController.swift; sourceTree = "<group>"; };
+		A6148DF9248C80CE0042858C /* DGHomeDailyItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHomeDailyItemCell.swift; sourceTree = "<group>"; };
+		A6148DFB248C80EE0042858C /* DGHomeDailyHabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGHomeDailyHabitCell.swift; sourceTree = "<group>"; };
 		A6437D68248690BF00C28BA5 /* DGeneration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGeneration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6437D6B248690BF00C28BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6437D6F248690BF00C28BA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +236,7 @@
 		A61211792487FA170085F03C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6148DF8248C809F0042858C /* Cell */,
 				A6121180248804900085F03C /* DGHomeHeaderView.swift */,
 				A61211822488049C0085F03C /* DGHomeHeaderView.xib */,
 			);
@@ -241,6 +248,7 @@
 			children = (
 				A612117C2487FA510085F03C /* Home.storyboard */,
 				A612117E2487FBF30085F03C /* DGHomeViewController.swift */,
+				A6148DF4248C7C8B0042858C /* DGHomeDailyListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -251,6 +259,15 @@
 				A6148DEF248BEA4C0042858C /* DGCore.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A6148DF8248C809F0042858C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A6148DF9248C80CE0042858C /* DGHomeDailyItemCell.swift */,
+				A6148DFB248C80EE0042858C /* DGHomeDailyHabitCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A6437D5F248690BF00C28BA5 = {
@@ -636,6 +653,7 @@
 				A6B43BC22489542B00799250 /* DGMultiResponseTableView.swift in Sources */,
 				A6B43BC02489538C00799250 /* DGSegmentViewModel.swift in Sources */,
 				A6121181248804900085F03C /* DGHomeHeaderView.swift in Sources */,
+				A6148DFC248C80EE0042858C /* DGHomeDailyHabitCell.swift in Sources */,
 				A6437D70248690BF00C28BA5 /* ViewController.swift in Sources */,
 				A605A456248888B3007D0228 /* DGProjectHeader.swift in Sources */,
 				A605A46B24888C65007D0228 /* DGBaseNavigationController.swift in Sources */,
@@ -647,6 +665,8 @@
 				A6B43BB82489486800799250 /* DWFloatingButton.swift in Sources */,
 				A6148DE5248B47EB0042858C /* UIView+Ex.swift in Sources */,
 				A6B43BBC248952A600799250 /* DGSegmentContainerView.swift in Sources */,
+				A6148DF5248C7C8B0042858C /* DGHomeDailyListViewController.swift in Sources */,
+				A6148DFA248C80CE0042858C /* DGHomeDailyItemCell.swift in Sources */,
 				A6B43BBA248951EB00799250 /* DGSegmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -824,7 +844,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6U7BB57HF;
 				INFOPLIST_FILE = DGeneration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -844,7 +864,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6U7BB57HF;
 				INFOPLIST_FILE = DGeneration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

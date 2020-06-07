@@ -49,7 +49,7 @@ class DGHomeHeaderView: UIView {
         
         doneFloatingButton.text = "10"
         doneFloatingButton.subText = "Done"
-        remainFloatingButton.text = "13"
+        remainFloatingButton.text = "1"
         remainFloatingButton.subText = "Remain"
         daysFloatingButton.text = "4"
         daysFloatingButton.subText = "Days"

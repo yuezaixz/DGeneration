@@ -48,7 +48,9 @@ class DGHomeViewController: DGBaseViewController {
     private func initSegmentView() {
         let viewModel = DGSegmentListViewModel()
         viewModel.segmentTitles = ["Done", "Today", "Habits", "Other"]
-        viewModel.subViewControllers = viewModel.segmentTitles.map { _ in DGBaseSegmentViewController() }
+        viewModel.subViewControllers = viewModel.segmentTitles.map { _ in
+            UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "DGHomeDailyListViewController") as! DGHomeDailyListViewController
+        }
         segmentContainerView.segmentContainerViewModel = viewModel
         segmentContainerView.reload()
     }

@@ -1,4 +1,4 @@
-platform :ios, '11.0'
+platform :ios, '13.0'
 
 use_frameworks!
 
@@ -41,6 +41,7 @@ def third_pod
   pod 'JCTagListView', '~> 2.0.0'
   pod 'JXSegmentedView'
   pod 'SkeletonView', '1.8.2'
+  pod 'EMTNeumorphicView'
 
 end
 

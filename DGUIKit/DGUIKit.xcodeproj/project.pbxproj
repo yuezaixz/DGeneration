@@ -21,6 +21,7 @@
 		A605A46224888A81007D0228 /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A46124888A81007D0228 /* UIDevice+Ex.swift */; };
 		A605A46424888AC3007D0228 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A46324888AC3007D0228 /* Date+Ex.swift */; };
 		A605A46724888B00007D0228 /* Bundle+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605A46624888B00007D0228 /* Bundle+Ex.swift */; };
+		A6148DFF248C845A0042858C /* ReuseIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6148DFE248C845A0042858C /* ReuseIdentifying.swift */; };
 		A6BAC79D2486A87E0022B596 /* DGUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BAC79B2486A87E0022B596 /* DGUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6BAC7A62486A8AD0022B596 /* DGDummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BAC7A52486A8AD0022B596 /* DGDummyView.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		A605A46124888A81007D0228 /* UIDevice+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
 		A605A46324888AC3007D0228 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		A605A46624888B00007D0228 /* Bundle+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ex.swift"; sourceTree = "<group>"; };
+		A6148DFE248C845A0042858C /* ReuseIdentifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifying.swift; sourceTree = "<group>"; };
 		A6BAC7982486A87E0022B596 /* DGUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BAC79B2486A87E0022B596 /* DGUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGUIKit.h; sourceTree = "<group>"; };
 		A6BAC79C2486A87E0022B596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		A6148DFD248C844F0042858C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6148DFE248C845A0042858C /* ReuseIdentifying.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		A6BAC78E2486A87E0022B596 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 		A6BAC79A2486A87E0022B596 /* DGUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A6148DFD248C844F0042858C /* Utils */,
 				A605A4452487AC38007D0228 /* Common */,
 				A605A4422487ABC6007D0228 /* Extensions */,
 				A605A43E2487AB6F007D0228 /* Base */,
@@ -255,6 +266,7 @@
 				A605A45A248889B2007D0228 /* String+Ex.swift in Sources */,
 				A605A4412487AB8D007D0228 /* DGBaseViewController.swift in Sources */,
 				A605A44F2488867D007D0228 /* DGCoreBaseNavigationController.swift in Sources */,
+				A6148DFF248C845A0042858C /* ReuseIdentifying.swift in Sources */,
 				A605A45C248889D4007D0228 /* UIFont+Ex.swift in Sources */,
 				A605A46024888A5F007D0228 /* UIColor+Hex.swift in Sources */,
 				A605A46724888B00007D0228 /* Bundle+Ex.swift in Sources */,
@@ -404,7 +416,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DGUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,7 +444,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DGUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
