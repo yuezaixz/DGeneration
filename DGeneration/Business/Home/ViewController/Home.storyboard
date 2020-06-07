@@ -101,7 +101,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="214" id="6pX-lL-71i"/>
+                                                <constraint firstAttribute="height" constant="208" id="6pX-lL-71i"/>
                                             </constraints>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hM6-I9-to8">
                                                 <size key="itemSize" width="140" height="168"/>
@@ -242,11 +242,11 @@
                                                             <color key="textColor" red="0.23921568630000001" green="0.50980392159999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEh-Is-zLi">
-                                                            <rect key="frame" x="23" y="75.5" width="166" height="14"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEh-Is-zLi" customClass="DwActivityOverView" customModule="DGeneration" customModuleProvider="target">
+                                                            <rect key="frame" x="23" y="75.5" width="176" height="14"/>
                                                             <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="166" id="boh-zt-SZG"/>
+                                                                <constraint firstAttribute="width" constant="176" id="boh-zt-SZG"/>
                                                                 <constraint firstAttribute="height" constant="14" id="wDl-Jw-X8L"/>
                                                             </constraints>
                                                         </view>
@@ -283,6 +283,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="activityOverView" destination="JEh-Is-zLi" id="4Tc-DP-qhV"/>
                                             <outlet property="containerView" destination="c49-PS-jQU" id="vIS-5J-gqj"/>
                                         </connections>
                                     </tableViewCell>

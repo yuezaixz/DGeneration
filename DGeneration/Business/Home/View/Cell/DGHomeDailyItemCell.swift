@@ -12,6 +12,7 @@ import EMTNeumorphicView
 class DGHomeDailyItemCell: UITableViewCell {
     
     @IBOutlet weak var containerView: EMTNeumorphicView!
+    @IBOutlet weak var activityOverView: DwActivityOverView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +20,10 @@ class DGHomeDailyItemCell: UITableViewCell {
         containerView.neumorphicLayer?.cornerRadius = 18
         containerView.neumorphicLayer?.depthType = .concave
         containerView.neumorphicLayer?.elementDepth = 7
+    }
+    
+    func setupData(_ nums: [Int]) {
+        activityOverView.nums = nums
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

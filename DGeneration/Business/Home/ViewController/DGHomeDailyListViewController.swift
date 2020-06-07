@@ -31,7 +31,13 @@ extension DGHomeDailyListViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.dequeueReusableCell(withIdentifier: DGHomeDailyItemCell.kReuseIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: DGHomeDailyItemCell.kReuseIdentifier, for: indexPath)
+        
+        if let cell = cell as? DGHomeDailyItemCell {
+            cell.setupData([0, 0, 1, 4, 8, 0, 0, 0, 6, 4])
+        }
+        
+        return cell
     }
     
     
