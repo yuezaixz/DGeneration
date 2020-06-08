@@ -28,7 +28,7 @@ class DWFloatingButton: UIView {
     }
     
     // 暂不开放
-    private var contentColor: UIColor { .white }
+    private var contentColor: UIColor { kAppBGColor }
     
     open var buttonBackgroundColor: UIColor = UIColor(red: 0.0, green: 104.0 / 255.0, blue: 1.0, alpha: 1.0) {
         didSet {

@@ -20,6 +20,7 @@ class DGHomeViewController: DGBaseViewController {
     
     @IBOutlet weak var segmentContainerView: DGSegmentScrollContainerView!
     
+    @IBOutlet weak var mainViewHeight: NSLayoutConstraint!
     // 穿透吸顶相关
     var superCanScroll = true
     var maxOffset: CGFloat {
@@ -35,6 +36,8 @@ class DGHomeViewController: DGBaseViewController {
         } else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
+        
+        mainViewHeight.constant = kScreenHeight - 44 - kAppStatusBarHeight
         
         // 暂时写死，这个250就是segmentView起始的高度
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
