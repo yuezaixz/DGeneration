@@ -28,6 +28,10 @@ protocol DGSegmentContainerScrollBehavior {
     
     var scrolling: Bool { get set }
     
+    var segmentScrolling: BehaviorRelay<Bool> { get set }
+    
+    var scrollEnable: BehaviorRelay<Bool> { get set }
+    
     var superCanScrollBlock: ((Bool) -> Void)? { get set }
     
     var currentMainViewController: DGBaseSegmentScrollViewController? { get }
@@ -81,6 +85,8 @@ class DGSegmentListScrollViewModel: DGSegmentContainerScrollBehavior {
     // MARK: - Input & Output
     
     var segmentScrolling = BehaviorRelay<Bool>(value: false)
+    
+    var scrollEnable = BehaviorRelay<Bool>(value: true)
     
     var headerOffset = BehaviorRelay<CGFloat>(value: 0.0)
     var headerIsExpand = BehaviorRelay<Bool>(value: false)

@@ -18,7 +18,13 @@ class DGSegmentScrollContainerView: UIView {
     var listContainerView: JXSegmentedListContainerView!
     
     // MARK: - Input
-    var segmentContainerViewModel: DGSegmentContainerScrollBehavior?
+    var segmentContainerViewModel: DGSegmentContainerScrollBehavior? {
+        didSet {
+            if listContainerView != nil {
+                segmentContainerViewModel?.scrollEnable.asDriver(onErrorJustReturn: true).drive(listContainerView.scrollView.rx.isScrollEnabled).disposed(by: rx.disposeBag)
+            }
+        }
+    }
     
     // MARK: - Output
     
@@ -83,10 +89,13 @@ extension DGSegmentScrollContainerView: JXSegmentedViewDelegate {
     }
     
     func segmentedView(_ segmentedView: JXSegmentedView, didScrollSelectedItemAt index: Int) {
+        
+        segmentContainerViewModel?.segmentScrolling.accept(false)
 //        segmentContainerViewModel?.scrolling = false
     }
     
     func segmentedView(_ segmentedView: JXSegmentedView, scrollingFrom leftIndex: Int, to rightIndex: Int, percent: CGFloat) {
+        segmentContainerViewModel?.segmentScrolling.accept(true)
 //        segmentContainerViewModel?.scrolling = true
     }
 }

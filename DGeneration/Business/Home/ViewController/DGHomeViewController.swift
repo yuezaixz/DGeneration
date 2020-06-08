@@ -76,15 +76,38 @@ class DGHomeViewController: DGBaseViewController {
             vc.superCanScrollBlock = { [weak self] superCanScroll in
                 self?.superCanScroll = superCanScroll
             }
+            viewModel.scrollEnable.asDriver(onErrorJustReturn: true).drive(vc.rx.habitCanScroll).disposed(by: vc.rx.disposeBag)
+            
+            vc.isHabitScrolling.subscribe(onNext: { [weak self] isScrolling in
+                self?.scrollView.isMultiResponse = !isScrolling
+            }).disposed(by: vc.rx.disposeBag)
             return vc
         }
         segmentContainerView.segmentContainerViewModel = viewModel
+        
+        viewModel.segmentScrolling.subscribe(onNext: { [weak self] isScrolling in
+            self?.scrollView.isMultiResponse = !isScrolling
+        }).disposed(by: rx.disposeBag)
+        
         segmentContainerView.reload()
     }
 
 }
 
 extension DGHomeViewController: UIScrollViewDelegate {
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        if let viewModel = segmentContainerView.segmentContainerViewModel as? DGSegmentListScrollViewModel {
+            viewModel.scrollEnable.accept(false)
+        }
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if let viewModel = segmentContainerView.segmentContainerViewModel as? DGSegmentListScrollViewModel {
+            viewModel.scrollEnable.accept(true)
+        }
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if !superCanScroll {
             scrollView.contentOffset.y = maxOffset

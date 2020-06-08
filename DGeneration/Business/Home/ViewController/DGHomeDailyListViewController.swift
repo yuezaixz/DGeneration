@@ -13,6 +13,8 @@ class DGHomeDailyListViewController: DGBaseSegmentScrollViewController {
     @IBOutlet weak var dailyTableView: UITableView!
     @IBOutlet weak var habitCollectionView: UICollectionView!
     
+    var isHabitScrolling = BehaviorRelay<Bool>(value: false)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if #available(iOS 11.0, *) {
@@ -26,6 +28,15 @@ class DGHomeDailyListViewController: DGBaseSegmentScrollViewController {
 }
 
 extension DGHomeDailyListViewController: UIScrollViewDelegate {
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        isHabitScrolling.accept(true)
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        isHabitScrolling.accept(false)
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if !childCanScroll {
             scrollView.contentOffset.y = 0
@@ -87,5 +98,15 @@ extension DGHomeDailyListViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         20.0
+    }
+}
+
+extension Reactive where Base: DGHomeDailyListViewController {
+    var habitCanScroll: Binder<Bool> {
+        return Binder(self.base) { vc, scrollEnable in
+            if vc.habitCollectionView != nil {
+                vc.habitCollectionView.isScrollEnabled = scrollEnable
+            }
+        }
     }
 }
