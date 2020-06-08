@@ -9,8 +9,17 @@
 
 ![](http://image.runmaf.com/2020-06-03-15911890764729.jpg)
 
+## 首页效果
+
+
+<p align="left" >
+  <img src="./Resources/preview_2.gif" alt="preview" title="preview" width = "320">
+</p>
+
 ## 这个月的TODO LIST
 
+* Neumorphic风格卡片
+* 漂浮按钮点击效果等一些基础组件
 * 设计中的基础功能
 * Siri Kit接入
 
