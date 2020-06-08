@@ -117,7 +117,7 @@
 		A6148E00248CE5DF0042858C /* DwActivityOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DwActivityOverView.swift; sourceTree = "<group>"; };
 		A6148E02248D2D510042858C /* DGSegmentScrollContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSegmentScrollContainerView.swift; sourceTree = "<group>"; };
 		A6148E04248D2DE10042858C /* DGSegmentScrollContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGSegmentScrollContainerView.xib; sourceTree = "<group>"; };
-		A6437D68248690BF00C28BA5 /* DGeneration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGeneration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6437D68248690BF00C28BA5 /* 前浪.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "前浪.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6437D6B248690BF00C28BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6437D6F248690BF00C28BA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6437D72248690BF00C28BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -292,7 +292,7 @@
 		A6437D69248690BF00C28BA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6437D68248690BF00C28BA5 /* DGeneration.app */,
+				A6437D68248690BF00C28BA5 /* 前浪.app */,
 				A6437D7E248690C100C28BA5 /* DGenerationTests.xctest */,
 				A6437D89248690C100C28BA5 /* DGenerationUITests.xctest */,
 			);
@@ -406,7 +406,7 @@
 			);
 			name = DGeneration;
 			productName = DGeneration;
-			productReference = A6437D68248690BF00C28BA5 /* DGeneration.app */;
+			productReference = A6437D68248690BF00C28BA5 /* 前浪.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A6437D7D248690C100C28BA5 /* DGenerationTests */ = {
@@ -862,7 +862,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidandty.DGeneration;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "前浪";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -882,7 +882,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidandty.DGeneration;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "前浪";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
