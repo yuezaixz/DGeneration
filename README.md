@@ -1,4 +1,7 @@
-# DGeneration
+<img src="http://image.runmaf.com/2020-06-09-icon-60@2x.png" alt="DGeneration" width="36" height="36"> DGeneration: 坚持打卡，顶住后浪😂
+======================================
+
+[![Travis CI](https://travis-ci.org/ReactiveX/RxSwift.svg?branch=master)](https://travis-ci.org/ReactiveX/RxSwift) ![platforms](https://img.shields.io/badge/platforms-iOS-333333.svg)
 
 坚持了个把月，用打卡方式坚持每天练英语半小时，每天3道算法题，每天刷Medium的每日推荐文章，每周至少写一篇博客等。
 用了一些打卡软件，都不是很满意，所以抽业余时间自己做个好了。
@@ -27,3 +30,5 @@
 
 * AppExtension添加快捷操作Widget
 * 服务端接入
+
+
